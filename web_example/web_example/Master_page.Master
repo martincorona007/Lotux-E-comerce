@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master_page.master.cs" Inherits="web_example.Master_page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Master Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server" >
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Styles\Master_page\css\style.css" type="text/css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+			<h1>Arcade News</h1>
+		</header>
+		<header>
+			<nav>
+				<a>Home</a>
+				<a>World</a>
+				<a>Weather</a>
+				<a>Tech</a>
+				<a>Stories</a>
+				<a>UK</a>
+				<a>Travel</a>
+			</nav>
+		</header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
