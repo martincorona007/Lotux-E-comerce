@@ -67,7 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\Master_page\css\style.css" />
+    <Content Include="Styles\Master_page\style.css" />
+    <Content Include="Styles\Pictures\rsz_p1.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web_Pages\page_home.aspx" />
     <Content Include="Web_Pages\page_login.aspx" />
