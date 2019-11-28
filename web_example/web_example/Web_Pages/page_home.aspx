@@ -5,4 +5,5 @@
     
     
     <asp:Label ID="lbl_user" runat="server" Text=""></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="this is home my friend"></asp:Label>
 </asp:Content>

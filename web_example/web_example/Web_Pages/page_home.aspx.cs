@@ -11,6 +11,7 @@ namespace web_example.Web_Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            /*
             String name;
             if (Session["value"] == null)
             {
@@ -20,9 +21,12 @@ namespace web_example.Web_Pages
             {
                 name = Request.QueryString["Name"];
                 lbl_user.Text = "Welcome " + name;
-            }
+            }*/
 
         }
+
+
+
 
     }
 }

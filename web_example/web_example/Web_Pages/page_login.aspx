@@ -3,7 +3,7 @@
     
 </asp:Content>
  <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" >
-     <div style="background-image: url('../Styles/Pictures/rsz_p1.jpg');width:97%;height:550px;" >
+     <div id="image">
       
         <div id="lamisma">
             <div>

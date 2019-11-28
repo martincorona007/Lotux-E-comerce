@@ -24,7 +24,7 @@ namespace web_example.Web_Pages
                 //los datos obtenidos por el usuario.
                 cls_singup obj = new cls_singup("","","");
                 obj.Name = txt_name.Text;
-                obj.Email = txt_email.Text;
+               obj.Email = txt_email.Text;
                 obj.Kave = txt_password1.Text;
                 obj.agregar();
 
