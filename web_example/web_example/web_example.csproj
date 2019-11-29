@@ -1655,6 +1655,7 @@
     <Content Include="fontawesome\webfonts\fa-brands-400.svg" />
     <Content Include="fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Styles\login_admin\custum_style.css" />
     <Content Include="Styles\login_user\custum_style.css" />
     <Content Include="Styles\Master_page\custum_style.css" />
     <Content Include="Styles\Pictures\Capture.jpg" />
@@ -1663,13 +1664,15 @@
     <Content Include="Styles\sing_up\custum_style.css" />
     <Content Include="Web.config" />
     <Content Include="Web_Pages\page_home.aspx" />
-    <Content Include="Web_Pages\page_login.aspx" />
+    <Content Include="Web_Pages\page_login_user.aspx" />
+    <Content Include="Web_Pages\page_login_admin.aspx" />
     <Content Include="Web_Pages\page_sales_management.aspx" />
     <Content Include="Web_Pages\page_singup.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\cls_conection.cs" />
-    <Compile Include="Classes\cls_login.cs" />
+    <Compile Include="Classes\cls_login_user.cs" />
+    <Compile Include="Classes\cls_login_admin.cs" />
     <Compile Include="Classes\cls_singup.cs" />
     <Compile Include="DataSet_login.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1696,12 +1699,19 @@
     <Compile Include="Web_Pages\page_home.aspx.designer.cs">
       <DependentUpon>page_home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Web_Pages\page_login.aspx.cs">
-      <DependentUpon>page_login.aspx</DependentUpon>
+    <Compile Include="Web_Pages\page_login_user.aspx.cs">
+      <DependentUpon>page_login_user.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Web_Pages\page_login.aspx.designer.cs">
-      <DependentUpon>page_login.aspx</DependentUpon>
+    <Compile Include="Web_Pages\page_login_user.aspx.designer.cs">
+      <DependentUpon>page_login_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Pages\page_login_admin.aspx.cs">
+      <DependentUpon>page_login_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_Pages\page_login_admin.aspx.designer.cs">
+      <DependentUpon>page_login_admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web_Pages\page_sales_management.aspx.cs">
       <DependentUpon>page_sales_management.aspx</DependentUpon>

@@ -24,7 +24,7 @@ namespace web_example.Web_Pages
             {
                 //Instancia de clase Login donde se obtendran los metodos necesarios para realizar
                 //la operacion del login.
-                cls_login obj = new cls_login("", "");
+                cls_login_user obj = new cls_login_user("", "");
                 //Dentro de esta condicional se utiliza el nombre de la instacia
                 //y se manda a llamar al metodo login que realizara
                 //si el usuario esta dentro de la base de datos.

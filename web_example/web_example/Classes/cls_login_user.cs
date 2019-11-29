@@ -6,12 +6,12 @@ using System.Web;
 
 namespace web_example.Classes
 {
-    public class cls_login:cls_conection
+    public class cls_login_user:cls_conection
     {
         string table = "Users";
         protected string email, kave,name;
         protected int id_data;
-        public cls_login(string e,string k)
+        public cls_login_user(string e,string k)
         {
             this.email = e;
             this.kave = k;
