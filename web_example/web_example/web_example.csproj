@@ -1660,20 +1660,25 @@
     <Content Include="Styles\Master_page\custum_style.css" />
     <Content Include="Styles\Pictures\Capture.jpg" />
     <Content Include="Styles\Pictures\logo.jpg" />
+    <Content Include="Styles\Pictures\p1.PNG" />
+    <Content Include="Styles\Pictures\p2.PNG" />
+    <Content Include="Styles\Pictures\p3.PNG" />
     <Content Include="Styles\Pictures\rsz_p1.jpg" />
     <Content Include="Styles\sing_up\custum_style.css" />
     <Content Include="Web.config" />
     <Content Include="Web_Pages\page_home.aspx" />
     <Content Include="Web_Pages\page_login_user.aspx" />
     <Content Include="Web_Pages\page_login_admin.aspx" />
-    <Content Include="Web_Pages\page_sales_management.aspx" />
-    <Content Include="Web_Pages\page_singup.aspx" />
+    <Content Include="Web_Pages\page_singup_admin_1.aspx" />
+    <Content Include="Web_Pages\page_singup_admin.aspx" />
+    <Content Include="Web_Pages\page_singup_user.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\cls_conection.cs" />
     <Compile Include="Classes\cls_login_user.cs" />
     <Compile Include="Classes\cls_login_admin.cs" />
-    <Compile Include="Classes\cls_singup.cs" />
+    <Compile Include="Classes\cls_singup_user.cs" />
+    <Compile Include="Classes\cls_singup_admin.cs" />
     <Compile Include="DataSet_login.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1713,19 +1718,26 @@
     <Compile Include="Web_Pages\page_login_admin.aspx.designer.cs">
       <DependentUpon>page_login_admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Web_Pages\page_sales_management.aspx.cs">
-      <DependentUpon>page_sales_management.aspx</DependentUpon>
+    <Compile Include="Web_Pages\page_singup_admin_1.aspx.cs">
+      <DependentUpon>page_singup_admin_1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Web_Pages\page_sales_management.aspx.designer.cs">
-      <DependentUpon>page_sales_management.aspx</DependentUpon>
+    <Compile Include="Web_Pages\page_singup_admin_1.aspx.designer.cs">
+      <DependentUpon>page_singup_admin_1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Web_Pages\page_singup.aspx.cs">
-      <DependentUpon>page_singup.aspx</DependentUpon>
+    <Compile Include="Web_Pages\page_singup_admin.aspx.cs">
+      <DependentUpon>page_singup_admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Web_Pages\page_singup.aspx.designer.cs">
-      <DependentUpon>page_singup.aspx</DependentUpon>
+    <Compile Include="Web_Pages\page_singup_admin.aspx.designer.cs">
+      <DependentUpon>page_singup_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Pages\page_singup_user.aspx.cs">
+      <DependentUpon>page_singup_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_Pages\page_singup_user.aspx.designer.cs">
+      <DependentUpon>page_singup_user.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

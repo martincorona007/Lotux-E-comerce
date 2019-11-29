@@ -6,20 +6,20 @@ using System.Web;
 
 namespace web_example.Classes
 {
-    public class cls_singup:cls_conection
+    public class cls_singup_user:cls_conection
     {
 
        
         string table = "Users";
         protected string email, kave, name;
         protected int id_data;
-        public cls_singup(string e, string k,string n)
+        public cls_singup_user(string e, string k,string n)
         {
             this.email = e;
             this.kave = k;
             this.name = n;
         }
-        public cls_singup()
+        public cls_singup_user()
         {
 
         }

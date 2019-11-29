@@ -22,7 +22,7 @@ namespace web_example.Web_Pages
                 //Se manda a llamar la clase classpageRegistrationUserClient para mandar a los metodos
                 //correspondientes para registar el usuario y almacenar en los Getters y Setters 
                 //los datos obtenidos por el usuario.
-                cls_singup obj = new cls_singup("","","");
+                cls_singup_user obj = new cls_singup_user("","","");
                 obj.Name = txt_name.Text;
                obj.Email = txt_email.Text;
                 obj.Kave = txt_password1.Text;

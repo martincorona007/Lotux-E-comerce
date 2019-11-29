@@ -8,7 +8,7 @@ namespace web_example.Classes
 {
     public class cls_login_admin:cls_conection
     {
-        string table = "Admin"; Connect to the (Dataset) and modify cls_login and master styles
+        string table = "Admin"; //Connect to the (Dataset) and modify cls_login and master styles
         protected string email, kave;
         protected int id_data;
         public cls_login_admin(string e, string k)
@@ -53,7 +53,7 @@ namespace web_example.Classes
                     //En caso de ser certa la condición
                     //se almacenan los datos de la tabla 
                     //en los atributos y regresa un true.
-                    ID_data = int.Parse(fila["ID_data"].ToString());
+                    ID_data = int.Parse(fila["ID_admin"].ToString());
                     Email = fila["email"].ToString();
                    
                     //Kave = fila["password"].ToString();
