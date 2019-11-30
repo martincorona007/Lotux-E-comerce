@@ -28,6 +28,9 @@
                                             <td>
                                                 <asp:RegularExpressionValidator ID="REVemail" runat="server" ControlToValidate="txt_email" ErrorMessage="Email invalid" Font-Bold="True" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                                             </td>
+                                            <td>
+                                                <asp:Label ID="lbl_verification" runat="server" Font-Bold="True" ForeColor="Red" Text=""></asp:Label>
+                                            </td>
                                         </tr>
                                         
                                     </table>

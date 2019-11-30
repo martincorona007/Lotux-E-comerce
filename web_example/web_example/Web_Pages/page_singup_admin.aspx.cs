@@ -23,15 +23,24 @@ namespace web_example.Web_Pages
                 //correspondientes para registar el usuario y almacenar en los Getters y Setters 
                 //los datos obtenidos por el usuario.
                 cls_singup_admin obj = new cls_singup_admin("", "");
-                obj.Email = txt_email.Text;
-                obj.Kave = txt_password1.Text;
-                obj.add();
+                if (obj.Verification_Email(txt_email.Text))
+                {
+                    lbl_verification.Text = "That username is taken. Try another.";
+                }
+                else
+                {
+                    obj.Email = txt_email.Text;
+                    obj.Kave = txt_password1.Text;
+                    obj.Add();
 
 
-                //Mostrara un mensaje en caso de ser exitoso la operación
-                Response.Write("Successful");
-                //Se redirecciona al login 
-                Response.Redirect("~/Web_Pages/page_login_admin.aspx");
+                    //Mostrara un mensaje en caso de ser exitoso la operación
+                    Response.Write("Successful");
+                    //Se redirecciona al login 
+                    Response.Redirect("~/Web_Pages/page_singup_admin_1.aspx?Mail=" + txt_email.Text);
+
+                }
+
             }
             catch
             {

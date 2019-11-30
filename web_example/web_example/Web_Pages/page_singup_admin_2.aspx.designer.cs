@@ -10,7 +10,7 @@
 namespace web_example.Web_Pages {
     
     
-    public partial class page_singup_admin {
+    public partial class page_singup_admin_2 {
         
         /// <summary>
         /// Image1 control.
@@ -22,76 +22,67 @@ namespace web_example.Web_Pages {
         protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
-        /// lbl_email control.
+        /// lbl_type_credit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_email;
+        protected global::System.Web.UI.WebControls.Label lbl_type_credit;
         
         /// <summary>
-        /// txt_email control.
+        /// DDL_type control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_email;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_type;
         
         /// <summary>
-        /// RFVEmail control.
+        /// RFV_type control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVEmail;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_type;
         
         /// <summary>
-        /// REVemail control.
+        /// lbl_credit_card control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVemail;
+        protected global::System.Web.UI.WebControls.Label lbl_credit_card;
         
         /// <summary>
-        /// lbl_verification control.
+        /// txt_credit_card control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_verification;
+        protected global::System.Web.UI.WebControls.TextBox txt_credit_card;
         
         /// <summary>
-        /// lbl_password1 control.
+        /// RFV_credit_card control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_password1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_credit_card;
         
         /// <summary>
-        /// txt_password1 control.
+        /// RegularExpressionValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_password1;
-        
-        /// <summary>
-        /// RFVpassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVpassword;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
         /// Label1 control.
@@ -103,31 +94,85 @@ namespace web_example.Web_Pages {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// txt_password2 control.
+        /// DDL_1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_password2;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_1;
         
         /// <summary>
-        /// RFVCpassword control.
+        /// RFV_DDL1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVCpassword;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_DDL1;
         
         /// <summary>
-        /// CVpassword control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CVpassword;
+        protected global::System.Web.UI.WebControls.Label Label2;
+        
+        /// <summary>
+        /// DDL2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL2;
+        
+        /// <summary>
+        /// RFV_ddl2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_ddl2;
+        
+        /// <summary>
+        /// lbl_code_security control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_code_security;
+        
+        /// <summary>
+        /// txt_code_security control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_code_security;
+        
+        /// <summary>
+        /// RFV_code_security control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_code_security;
+        
+        /// <summary>
+        /// RegularExpressionValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
         
         /// <summary>
         /// Button1 control.

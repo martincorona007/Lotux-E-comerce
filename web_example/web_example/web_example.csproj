@@ -1671,10 +1671,12 @@
     <Content Include="Web_Pages\page_login_admin.aspx" />
     <Content Include="Web_Pages\page_singup_admin_1.aspx" />
     <Content Include="Web_Pages\page_singup_admin.aspx" />
+    <Content Include="Web_Pages\page_singup_admin_2.aspx" />
     <Content Include="Web_Pages\page_singup_user.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\cls_conection.cs" />
+    <Compile Include="Classes\cls_country.cs" />
     <Compile Include="Classes\cls_login_user.cs" />
     <Compile Include="Classes\cls_login_admin.cs" />
     <Compile Include="Classes\cls_singup_user.cs" />
@@ -1731,6 +1733,13 @@
     </Compile>
     <Compile Include="Web_Pages\page_singup_admin.aspx.designer.cs">
       <DependentUpon>page_singup_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web_Pages\page_singup_admin_2.aspx.cs">
+      <DependentUpon>page_singup_admin_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web_Pages\page_singup_admin_2.aspx.designer.cs">
+      <DependentUpon>page_singup_admin_2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web_Pages\page_singup_user.aspx.cs">
       <DependentUpon>page_singup_user.aspx</DependentUpon>

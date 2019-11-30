@@ -16,22 +16,9 @@ namespace web_example.Classes
             this.email = e;
             this.kave = k;
         }
-        public String Email
-        {
-            set { email = value; }
-            get { return email; }
-        }
-        public String Kave
-        {
-            set { kave = value; }
-            get { return kave; }
-        }
-       
-        public int ID_data
-        {
-            set { id_data = value; }
-            get { return id_data; }
-        }
+        public String Email{set { email = value; }get { return email; }}
+        public String Kave{set { kave = value; }get { return kave; }}
+        public int ID_data{set { id_data = value; }get { return id_data; }}
 
         public bool login(string corre, string pass)
         {
