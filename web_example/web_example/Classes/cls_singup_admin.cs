@@ -10,16 +10,17 @@ namespace web_example.Classes
     {
         string table = "Admin";
         string table_1 = "Data_Admin";
-        string table_2 = "Billing";
+        string table_2 = "Billing_admin";
         protected string email, kave;
         bool korp;
 
         protected int id_data,get;
-        protected string first_name, last_name, number_phone, country, city, address, zip_code,type,date_end,code_security,number;
-        public cls_singup_admin(string e, string k)
+        protected string first_name, last_name, number_phone, access,country, city, address, zip_code,type,date_end,code_security,number;
+        public cls_singup_admin(string e, string k,string a)
         {
             this.email = e;
             this.kave = k;
+            this.access = a;
 
         }
         public cls_singup_admin(int id,string f, string l, string n, string c, string ci, string a, string z)
@@ -47,6 +48,8 @@ namespace web_example.Classes
         }
         public String Email{set { email = value; }get { return email; }}
         public String Kave{set { kave = value; }get { return kave; }}
+        public String Access { set { access = value; } get { return access; } }
+
 
         public int ID_data{set { id_data = value; }get { return id_data; }}
         public String First_name{set { first_name = value; }get { return first_name; }}
@@ -122,6 +125,7 @@ namespace web_example.Classes
 
             fila["email"] = Email;
             fila["password"] = Kave;
+            fila["access"] = Access;
             //   fila["ID_data"] = ID_data;
             //Se agregaran los datos a la tabla de la base de datos.
             Data.Tables[table].Rows.Add(fila);

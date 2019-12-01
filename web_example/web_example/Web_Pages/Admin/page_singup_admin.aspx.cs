@@ -22,7 +22,7 @@ namespace web_example.Web_Pages
                 //Se manda a llamar la clase classpageRegistrationUserClient para mandar a los metodos
                 //correspondientes para registar el usuario y almacenar en los Getters y Setters 
                 //los datos obtenidos por el usuario.
-                cls_singup_admin obj = new cls_singup_admin("", "");
+                cls_singup_admin obj = new cls_singup_admin("", "","");
                 if (obj.Verification_Email(txt_email.Text))
                 {
                     lbl_verification.Text = "That username is taken. Try another.";
@@ -31,13 +31,15 @@ namespace web_example.Web_Pages
                 {
                     obj.Email = txt_email.Text;
                     obj.Kave = txt_password1.Text;
+                    obj.Access = "Admin";
                     obj.Add();
+                    Session["email"] = txt_email.Text;
 
 
                     //Mostrara un mensaje en caso de ser exitoso la operación
                     Response.Write("Successful");
                     //Se redirecciona al login 
-                    Response.Redirect("~/Web_Pages/page_singup_admin_1.aspx?Mail=" + txt_email.Text);
+                    Response.Redirect("~/Web_Pages/Admin/page_singup_admin_1.aspx?");
 
                 }
 

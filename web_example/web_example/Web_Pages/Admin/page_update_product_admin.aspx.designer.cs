@@ -7,28 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace web_example {
+namespace web_example.Web_Pages.Admin {
     
     
-    public partial class Master_page {
-        
-        /// <summary>
-        /// head control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+    public partial class page_update_product_admin {
         
         /// <summary>
         /// Image1 control.
@@ -40,84 +22,84 @@ namespace web_example {
         protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
-        /// LB_Home control.
+        /// FileUpload1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_Home;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
         
         /// <summary>
-        /// LB_management control.
+        /// txt_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_management;
+        protected global::System.Web.UI.WebControls.TextBox txt_name;
         
         /// <summary>
-        /// LB_login_admin control.
+        /// DDL_category control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_login_admin;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_category;
         
         /// <summary>
-        /// LB_login_user control.
+        /// txt_brand control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_login_user;
+        protected global::System.Web.UI.WebControls.TextBox txt_brand;
         
         /// <summary>
-        /// LB_profile_admin control.
+        /// txt_current_stock control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_profile_admin;
+        protected global::System.Web.UI.WebControls.TextBox txt_current_stock;
         
         /// <summary>
-        /// LB_logout control.
+        /// txt_price control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_logout;
+        protected global::System.Web.UI.WebControls.TextBox txt_price;
         
         /// <summary>
-        /// LB_hello_user control.
+        /// txt_description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_hello_user;
+        protected global::System.Web.UI.WebControls.TextBox txt_description;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// btn_come_back control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button btn_come_back;
         
         /// <summary>
-        /// LinkButton6 control.
+        /// Button3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton6;
+        protected global::System.Web.UI.WebControls.Button Button3;
     }
 }

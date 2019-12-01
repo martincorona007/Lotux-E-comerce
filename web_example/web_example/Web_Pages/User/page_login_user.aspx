@@ -28,7 +28,7 @@
                 
             </div>
             <div class="form-row">
-                <asp:Label ID="lbl_status" runat="server" Text=" "></asp:Label>
+                <asp:Label ID="lbl_status" runat="server" Font-Bold="True" ForeColor="Red" Text=" "></asp:Label>
 
             </div>
         </div>

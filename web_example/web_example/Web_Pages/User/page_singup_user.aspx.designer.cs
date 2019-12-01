@@ -7,28 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace web_example {
+namespace web_example.Web_Pages {
     
     
-    public partial class Master_page {
-        
-        /// <summary>
-        /// head control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+    public partial class page_singup {
         
         /// <summary>
         /// Image1 control.
@@ -40,84 +22,120 @@ namespace web_example {
         protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
-        /// LB_Home control.
+        /// lbl_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_Home;
+        protected global::System.Web.UI.WebControls.Label lbl_email;
         
         /// <summary>
-        /// LB_management control.
+        /// txt_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_management;
+        protected global::System.Web.UI.WebControls.TextBox txt_email;
         
         /// <summary>
-        /// LB_login_admin control.
+        /// RFVEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_login_admin;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVEmail;
         
         /// <summary>
-        /// LB_login_user control.
+        /// REVemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_login_user;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator REVemail;
         
         /// <summary>
-        /// LB_profile_admin control.
+        /// lbl_verification control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_profile_admin;
+        protected global::System.Web.UI.WebControls.Label lbl_verification;
         
         /// <summary>
-        /// LB_logout control.
+        /// lbl_password1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_logout;
+        protected global::System.Web.UI.WebControls.Label lbl_password1;
         
         /// <summary>
-        /// LB_hello_user control.
+        /// txt_password1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LB_hello_user;
+        protected global::System.Web.UI.WebControls.TextBox txt_password1;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// RFVpassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVpassword;
         
         /// <summary>
-        /// LinkButton6 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton6;
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
+        /// txt_password2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_password2;
+        
+        /// <summary>
+        /// RFVCpassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVCpassword;
+        
+        /// <summary>
+        /// CVpassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CVpassword;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

@@ -23,7 +23,7 @@ namespace web_example.Web_Pages
                 //correspondientes para registar el usuario y almacenar en los Getters y Setters 
                 //los datos obtenidos por el usuario.
                 cls_singup_user obj = new cls_singup_user("","","");
-                obj.Name = txt_name.Text;
+                //obj.Name = txt_name.Text;
                obj.Email = txt_email.Text;
                 obj.Kave = txt_password1.Text;
                 obj.agregar();
@@ -32,7 +32,7 @@ namespace web_example.Web_Pages
                 //Mostrara un mensaje en caso de ser exitoso la operación
                 Response.Write("Registro exitosamente");
                 //Se redirecciona al login 
-                Response.Redirect("~/Web_Pages/page_login.aspx");
+                Response.Redirect("~/Web_Pages/User/page_login.aspx");
             }
             catch
             {

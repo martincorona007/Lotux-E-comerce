@@ -52,7 +52,7 @@ namespace web_example.Classes
             {
                 fila = Data.Tables[table].Rows[i];
                 //Se busca en la tabla si los datos proporcionados son pertenecientes a la tabla.
-                if (fila["email"].ToString().Trim().ToLower() == corre.Trim().ToLower() && fila["password"].ToString().Trim() == pass.Trim())
+                if (fila["email"].ToString().Trim().ToLower() == corre.Trim().ToLower() && fila["password"].ToString().Trim() == pass.Trim() && fila["access"].ToString().Trim() == "User")
                 {
                     //En caso de ser certa la condición
                     //se almacenan los datos de la tabla 
