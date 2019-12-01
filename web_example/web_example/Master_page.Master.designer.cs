@@ -40,22 +40,49 @@ namespace web_example {
         protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
-        /// LinkButton3 control.
+        /// LB_login_admin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        protected global::System.Web.UI.WebControls.LinkButton LB_login_admin;
         
         /// <summary>
-        /// LinkButton7 control.
+        /// LB_login_user control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton7;
+        protected global::System.Web.UI.WebControls.LinkButton LB_login_user;
+        
+        /// <summary>
+        /// LB_profile_admin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LB_profile_admin;
+        
+        /// <summary>
+        /// LB_logout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LB_logout;
+        
+        /// <summary>
+        /// LB_hello_user control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LB_hello_user;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

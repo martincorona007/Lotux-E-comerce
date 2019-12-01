@@ -33,11 +33,12 @@ namespace web_example.Web_Pages
 
                     id = obj.ID_data; //Se obtiene El ID del usuario del Setter y Getter.
                     
-                    //Session["Value"] = namee.ToString();
+                    Session["email"] =txt_email.Text;
+                    Session["role"] = "Admin";
                   //  txt_email.Text = Session["Value"].ToString();
                     //En esta linea de codigo realiza la operación de enviar al Web Form pageMenucabanias 
                     //el ID y el nombre del usuario.
-                   // Response.Redirect("~/Web_Pages/page_home.aspx?Id=" + id + "&Name=" + namee);
+                    Response.Redirect("~/Web_Pages/page_home.aspx?");
                     lbl_status.Text = "yes";
                 }
                 else

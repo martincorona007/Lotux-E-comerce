@@ -59,17 +59,21 @@
                         
                         
                         <li class="nav-item active" >
-                            <a class="nav-link" href="page_login_admin.aspx">Login</a>
+                           
+                            <asp:LinkButton class="nav-link" ID="LB_login_admin" runat="server" OnClick="LinkButton2_Click" >Login Admin</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                           <a class="nav-link" href="page_singup_admin_2.aspx">Sing Up</a>
+                           
+                            <asp:LinkButton class="nav-link" ID="LB_login_user" runat="server" OnClick="LinkButton1_Click" >Login User</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server">Logout</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LB_profile_admin" runat="server" OnClick="LinkButton4_Click" >Profile</asp:LinkButton>
                         </li>
- 
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server">Hello user</asp:LinkButton>
+                            <asp:LinkButton class="nav-link" ID="LB_logout" runat="server"  OnClick="LB_logout_Click">Logout</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LB_hello_user" runat="server"  OnClick="LB_hello_user_Click">Hello user</asp:LinkButton>
  
                         </li>
                     </ul>
