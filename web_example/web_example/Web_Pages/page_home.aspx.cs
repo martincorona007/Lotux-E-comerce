@@ -17,10 +17,11 @@ namespace web_example.Web_Pages
             {
                 Response.Redirect("~/Web_Pages/page_login.aspx");
             }
-            if(Session["value"]!=null) 
+            if(Session["role"]!=null) 
             {
                 name = Request.QueryString["Name"];
                 lbl_user.Text = "Welcome " + name;
+
             }*/
 
         }

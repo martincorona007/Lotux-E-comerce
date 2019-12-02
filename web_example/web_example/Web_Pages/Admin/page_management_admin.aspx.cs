@@ -9,14 +9,15 @@ namespace web_example.Web_Pages
 {
     public partial class page_management_admin : System.Web.UI.Page
     {
+        int idsk;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            idsk = Int32.Parse(Request.QueryString["Ides"]);
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("page_insert_product_admin.aspx");
+            Response.Redirect("page_insert_product_admin.aspx?idk="+idsk);
         }
 
         protected void Button2_Click(object sender, EventArgs e)

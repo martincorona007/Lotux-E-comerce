@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Web;
+
 
 namespace web_example.Classes
 {
@@ -11,31 +11,12 @@ namespace web_example.Classes
         string table = "Users";
         protected string email, kave,name;
         protected int id_data;
-        public cls_login_user(string e,string k)
-        {
-            this.email = e;
-            this.kave = k;
-        }
-        public String Email
-        {
-            set { email = value; }
-            get { return email; }
-        }
-        public String Kave
-        {
-            set { kave = value; }
-            get { return kave; }
-        }
-        public String Name
-        {
-            set { name = value; }
-            get { return name; }
-        }
-        public int ID_data
-        {
-            set { id_data = value; }
-            get { return id_data; }
-        }
+
+        public cls_login_user(string e,string k){this.email = e;this.kave = k;}
+        public String Email{set { email = value; }get { return email; }}
+        public String Kave{set { kave = value; }get { return kave; }}
+        public String Name{set { name = value; }get { return name; }}
+        public int ID_data{set { id_data = value; }get { return id_data; }}
         
         public bool login(string corre, string pass)
         {
@@ -57,9 +38,9 @@ namespace web_example.Classes
                     //En caso de ser certa la condición
                     //se almacenan los datos de la tabla 
                     //en los atributos y regresa un true.
-                    ID_data = int.Parse(fila["ID_data"].ToString());
+                    ID_data = int.Parse(fila["ID_user"].ToString());
                     Email = fila["email"].ToString();
-                    Name = fila["name"].ToString();
+                    
                     //Kave = fila["password"].ToString();
                     return true;
                 }

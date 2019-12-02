@@ -15,7 +15,7 @@ namespace web_example.Web_Pages
         int va;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //mail = Request.QueryString["Mail"];
+            mail = Request.QueryString["email_1"];
         }
         protected void SelectedIndex_Changed(object sender, EventArgs e)
         {
@@ -29,11 +29,9 @@ namespace web_example.Web_Pages
         {
             try
             {
-                //Se manda a llamar la clase classpageRegistrationUserClient para mandar a los metodos
-                //correspondientes para registar el usuario y almacenar en los Getters y Setters 
-                //los datos obtenidos por el usuario.
+                
                 cls_singup_admin obj = new cls_singup_admin(0, "","","","","","","");
-                get_id=obj.existe(Session["email"].ToString());
+                get_id=obj.existe(mail);
                 obj.ID_data = get_id;
                 obj.First_name = txt_first_name.Text ;
                 obj.Last_name =txt_last_name.Text;
@@ -43,12 +41,12 @@ namespace web_example.Web_Pages
                 obj.Address = txt_address.Text;
                 obj.Zip_code=txt_zipcode.Text;
                 obj.Add_1();
-                Session["Id"] = get_id;
+                //Session["Id"] = get_id;
 
                 //Mostrara un mensaje en caso de ser exitoso la operación
                 Response.Write("Successful");
-                //Se redirecciona al login 
-                Response.Redirect("~/Web_Pages/Admin/page_singup_admin_2.aspx?");
+               
+                Response.Redirect("~/Web_Pages/Admin/page_singup_admin_2.aspx?ID="+get_id);
             }
             catch(Exception exs)
             {

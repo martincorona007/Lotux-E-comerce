@@ -315,7 +315,7 @@
                                    </div>
                                    <div class="form-group col-sm">
                                         <asp:Label ID="lbl_type_credit" runat="server" Text="Credit Card Type"></asp:Label>
-                                        <asp:DropDownList ID="DDL_type" class="form-control"  runat="server" OnSelectedIndexChanged="SelectedIndex_Changed" DataTextField="countryName" DataValueField="countryName">
+                                        <asp:DropDownList ID="DDL_type" class="form-control"  runat="server" OnSelectedIndexChanged="SelectedIndex_Changed2" DataTextField="countryName" DataValueField="countryName">
                                            <asp:ListItem Value="0">Select</asp:ListItem>
                                                     <asp:ListItem>Master Card</asp:ListItem>
                                                     <asp:ListItem>American Express</asp:ListItem>
@@ -337,7 +337,7 @@
                                <div class="form-row">
                                    <div class="form-group col-sm">
                                         <asp:Label ID="Label1" runat="server" Text="Expiration Date"></asp:Label>
-                                     <asp:DropDownList ID="DDL_1" class="form-control" runat="server" OnSelectedIndexChanged="SelectedIndex_Changed" DataTextField="countryName"  DataValueField="countryName">
+                                     <asp:DropDownList ID="DDL_1" class="form-control" runat="server" OnSelectedIndexChanged="SelectedIndex_Changed4" DataTextField="countryName"  DataValueField="countryName">
                                            <asp:ListItem Value="0">Select</asp:ListItem>
                                                     <asp:ListItem>01</asp:ListItem>
                                                     <asp:ListItem>02</asp:ListItem>

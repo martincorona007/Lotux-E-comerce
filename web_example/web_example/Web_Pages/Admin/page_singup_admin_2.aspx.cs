@@ -13,7 +13,7 @@ namespace web_example.Web_Pages
         int ids;
         protected void Page_Load(object sender, EventArgs e)
         {
-           // ids = Int32.Parse(Request.QueryString["id"]);
+            ids = Int32.Parse(Request.QueryString["ID"]);
         }
 
         protected void SelectedIndex_Changed(object sender, EventArgs e)
@@ -30,12 +30,10 @@ namespace web_example.Web_Pages
         {
             try
             {
-                //Se manda a llamar la clase classpageRegistrationUserClient para mandar a los metodos
-                //correspondientes para registar el usuario y almacenar en los Getters y Setters 
-                //los datos obtenidos por el usuario.
+               
                 cls_singup_admin obj = new cls_singup_admin(0,"","","","");
                 
-                obj.ID_data = Int32.Parse(Session["Id"].ToString());
+                obj.ID_data = ids;
                 obj.Number = txt_credit_card.Text;
                 obj.Type= DDL_type.SelectedValue;
                 obj.Date_end = DDL_1.SelectedValue+"/"+DDL2.SelectedValue;
@@ -47,8 +45,8 @@ namespace web_example.Web_Pages
                 Response.Write("Successful");
                 //Se redirecciona al login 
                 Response.Redirect("~/Web_Pages/Admin/page_login_admin.aspx");
-                Session["email"] = "";
-                Session["Id"]= "";
+                //Session["Email"] = "";
+               // Session["Id"]= "";
             }
             catch(Exception ex)
             {

@@ -24,20 +24,29 @@ namespace web_example.Web_Pages
                 //los datos obtenidos por el usuario.
                 cls_singup_user obj = new cls_singup_user("","","");
                 //obj.Name = txt_name.Text;
-               obj.Email = txt_email.Text;
-                obj.Kave = txt_password1.Text;
-                obj.agregar();
-
+                if (obj.Verification_Email(txt_email.Text))
+                {
+                    lbl_verification.Text = "That username is taken. Try another.";
+                }
+                else
+                {
+                    obj.Email = txt_email.Text;
+                    obj.Kave = txt_password1.Text;
+                    obj.Access = "User";
+                    obj.Add();
+                   // Session["Email"] = txt_email.Text;
+                }
+               
 
                 //Mostrara un mensaje en caso de ser exitoso la operación
-                Response.Write("Registro exitosamente");
+                Response.Write("Successful add");
                 //Se redirecciona al login 
-                Response.Redirect("~/Web_Pages/User/page_login.aspx");
+                Response.Redirect("~/Web_Pages/User/page_singup_user_1.aspx?eemail="+txt_email.Text);
             }
             catch
             {
                 // Mostrara un mensaje en caso de no completar la operación
-                Response.Write("Registro incompleto");
+                Response.Write("Successful add");
             }
         }
     }

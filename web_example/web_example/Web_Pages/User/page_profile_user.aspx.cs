@@ -13,5 +13,30 @@ namespace web_example.Web_Pages.User
         {
 
         }
+
+        protected void SelectedIndex_Changed(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void SelectedIndex_Changed1(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void SelectedIndex_Changed4(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void SelectedIndex_Changed2(object sender, EventArgs e)
+        {
+
+        }
     }
 }
