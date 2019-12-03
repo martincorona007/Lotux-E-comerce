@@ -57,7 +57,41 @@ namespace web_example.Classes
             Data.Tables[table].Rows.Add(fila);
             AdaptadorDatos.Update(Data, table);
         }
-        
+        public void Update()
+        {
+            conectar(table);
+            DataRow fila;
+            if (Data.Tables[0].Rows.Count > 0)
+            {
 
+            }else if(Data.Tables[0].Rows.Count == 0)
+            {
+
+            } 
+        }
+        /*public cls_operations_admin Select(string fName)
+        {
+            var con = ConfigurationManager.ConnectionStrings["Yourconnection"].ToString();
+
+            Person matchingPerson = new Person();
+            using (SqlConnection myConnection = new SqlConnection(con))
+            {
+                string oString = "Select name,brand,price,description,photo,current_stock from Products where ID_prod=@fName";
+                SqlCommand oCmd = new SqlCommand(oString, myConnection);
+                oCmd.Parameters.AddWithValue("@fname", fName);
+                myConnection.Open();
+                using (SqlDataReader oReader = oCmd.ExecuteReader())
+                {
+                    while (oReader.Read())
+                    {
+                        matchingPerson.firstName = oReader["FirstName"].ToString();
+                        matchingPerson.lastName = oReader["LastName"].ToString();
+                    }
+
+                    myConnection.Close();
+                }
+            }
+            return matchingPerson;
+        }*/
     }
 }

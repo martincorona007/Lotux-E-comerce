@@ -34,14 +34,14 @@ namespace web_example.Web_Pages
                     obj.Kave = txt_password1.Text;
                     obj.Access = "User";
                     obj.Add();
-                   // Session["Email"] = txt_email.Text;
+                    Session["Email"] = txt_email.Text;
                 }
                
 
                 //Mostrara un mensaje en caso de ser exitoso la operación
                 Response.Write("Successful add");
                 //Se redirecciona al login 
-                Response.Redirect("~/Web_Pages/User/page_singup_user_1.aspx?eemail="+txt_email.Text);
+                Response.Redirect("~/Web_Pages/User/page_singup_user_1.aspx");
             }
             catch
             {

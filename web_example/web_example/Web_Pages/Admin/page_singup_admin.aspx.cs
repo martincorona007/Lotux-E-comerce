@@ -33,13 +33,13 @@ namespace web_example.Web_Pages
                     obj.Kave = txt_password1.Text;
                     obj.Access = "Admin";
                     obj.Add();
-                    //Session["email_1"] = txt_email.Text;
+                    Session["email_1"] = txt_email.Text;
 
 
                     //Mostrara un mensaje en caso de ser exitoso la operación
                     Response.Write("Successful");
                     //Se redirecciona al login 
-                    Response.Redirect("~/Web_Pages/Admin/page_singup_admin_1.aspx?email_1="+txt_email.Text);
+                    Response.Redirect("~/Web_Pages/Admin/page_singup_admin_1.aspx");
 
                 }
 

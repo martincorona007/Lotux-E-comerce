@@ -15,7 +15,7 @@ namespace web_example.Web_Pages.User
         int va;
         protected void Page_Load(object sender, EventArgs e)
         {
-            mail = Request.QueryString["eemail"];
+            //mail = Request.QueryString["eemail"];
         }
 
         protected void SelectedIndex_Changed(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace web_example.Web_Pages.User
             try
             {
                 cls_singup_user obj = new cls_singup_user( "", "", "");
-                get_id = obj.existe(mail);
+                get_id = obj.existe(Session["Email"].ToString());
                 obj.ID_data = get_id;
                 obj.First_name = txt_first_name.Text;
                 obj.Last_name = txt_last_name.Text;
@@ -41,11 +41,11 @@ namespace web_example.Web_Pages.User
                 obj.Address = txt_address.Text;
                 obj.Zip_code = txt_zipcode.Text;
                 obj.Add_1();
-               // Session["Idp"] = get_id;
+                Session["Idp"] = get_id;
 
                 Response.Write("Successful");
                 //Se redirecciona al login 
-                Response.Redirect("~/Web_Pages/User/page_singup_user_2.aspx?idep="+get_id);
+                Response.Redirect("~/Web_Pages/User/page_singup_user_2.aspx");
             }
             catch (Exception exs)
             {

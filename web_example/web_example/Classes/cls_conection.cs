@@ -15,12 +15,16 @@ namespace web_example.Classes
         protected SqlDataAdapter AdaptadorDatos;
         protected DataSet data;
         protected SqlConnection oconeccion = new SqlConnection();
-
         public cls_conection()
         {
 
         }
-
+        
+        public SqlConnection connection
+        {
+            set { oconeccion = value; }
+            get { return oconeccion; }
+        }
         public bool conectar(string tabla)
         {
             string strConeccion = ConfigurationManager.ConnectionStrings["web_example.Properties.Settings.db_exampleConnectionString"].ConnectionString;
@@ -35,6 +39,20 @@ namespace web_example.Classes
             return true;
 
         }
+        public bool connect_update(string table)
+        {
+            string strConeccion = ConfigurationManager.ConnectionStrings["web_example.Properties.Settings.db_exampleConnectionString"].ConnectionString;
+            oconeccion.ConnectionString = strConeccion;
+            oconeccion.Open();
+            AdaptadorDatos = new SqlDataAdapter("select name,brand,price,description,photo,current_stock from " + table+"WHERE ID_prod", oconeccion);
+            SqlCommandBuilder ejecutacomandos = new SqlCommandBuilder(AdaptadorDatos);
+            Data = new DataSet();
+
+            AdaptadorDatos.Fill(Data, table);
+            oconeccion.Close();
+            return true;
+
+        }
         public DataSet Data
         {
             set { data = value; }
@@ -45,6 +63,7 @@ namespace web_example.Classes
             set { reader = value; }
             get { return reader; }
         }
+
     }
     
 }

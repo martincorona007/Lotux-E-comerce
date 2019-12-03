@@ -15,7 +15,7 @@ namespace web_example.Web_Pages
         int va;
         protected void Page_Load(object sender, EventArgs e)
         {
-            mail = Request.QueryString["email_1"];
+            //mail = Request.QueryString["email_1"];
         }
         protected void SelectedIndex_Changed(object sender, EventArgs e)
         {
@@ -31,7 +31,7 @@ namespace web_example.Web_Pages
             {
                 
                 cls_singup_admin obj = new cls_singup_admin(0, "","","","","","","");
-                get_id=obj.existe(mail);
+                get_id=obj.existe(Session["email_1"].ToString());
                 obj.ID_data = get_id;
                 obj.First_name = txt_first_name.Text ;
                 obj.Last_name =txt_last_name.Text;
@@ -41,12 +41,12 @@ namespace web_example.Web_Pages
                 obj.Address = txt_address.Text;
                 obj.Zip_code=txt_zipcode.Text;
                 obj.Add_1();
-                //Session["Id"] = get_id;
+                Session["Id"] = get_id;
 
                 //Mostrara un mensaje en caso de ser exitoso la operación
                 Response.Write("Successful");
                
-                Response.Redirect("~/Web_Pages/Admin/page_singup_admin_2.aspx?ID="+get_id);
+                Response.Redirect("~/Web_Pages/Admin/page_singup_admin_2.aspx");
             }
             catch(Exception exs)
             {

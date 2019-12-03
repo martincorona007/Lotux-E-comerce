@@ -13,7 +13,7 @@ namespace web_example.Web_Pages
         int ids;
         protected void Page_Load(object sender, EventArgs e)
         {
-            ids = Int32.Parse(Request.QueryString["ID"]);
+           // ids = Int32.Parse(Request.QueryString["ID"]);
         }
 
         protected void SelectedIndex_Changed(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace web_example.Web_Pages
                
                 cls_singup_admin obj = new cls_singup_admin(0,"","","","");
                 
-                obj.ID_data = ids;
+                obj.ID_data = Int32.Parse(Session["Id"].ToString());
                 obj.Number = txt_credit_card.Text;
                 obj.Type= DDL_type.SelectedValue;
                 obj.Date_end = DDL_1.SelectedValue+"/"+DDL2.SelectedValue;
@@ -43,10 +43,10 @@ namespace web_example.Web_Pages
 
                 //Mostrara un mensaje en caso de ser exitoso la operación
                 Response.Write("Successful");
-                //Se redirecciona al login 
+                Session["email_1"] = "";
+                Session["Id"] = "";
                 Response.Redirect("~/Web_Pages/Admin/page_login_admin.aspx");
-                //Session["Email"] = "";
-               // Session["Id"]= "";
+               
             }
             catch(Exception ex)
             {

@@ -35,11 +35,11 @@ namespace web_example.Web_Pages
                     
                     Session["email"] =txt_email.Text;
                     Session["role"] = "Admin";
-                    //Session["Ides"] = id;
+                    Session["Ides"] = id;
                   //  txt_email.Text = Session["Value"].ToString();
                     //En esta linea de codigo realiza la operación de enviar al Web Form pageMenucabanias 
                     //el ID y el nombre del usuario.
-                    Response.Redirect("~/Web_Pages/page_home.aspx?Ides="+id);
+                    Response.Redirect("~/Web_Pages/page_home.aspx");
                     lbl_status.Text = "yes";
                 }
                 else

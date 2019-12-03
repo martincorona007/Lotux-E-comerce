@@ -13,7 +13,7 @@ namespace web_example.Web_Pages.Admin
         int kip;
         protected void Page_Load(object sender, EventArgs e)
         {
-            kip = Int32.Parse(Request.QueryString["idk"]);
+            //kip = Int32.Parse(Request.QueryString["idk"]);
         }
 
         protected void btn_come_back_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace web_example.Web_Pages.Admin
                 //los datos obtenidos por el usuario.
                 cls_operations_admin obj = new cls_operations_admin(0,0,"","",0,"","",0);
 
-                obj.Fk_id_admin = kip;
+                obj.Fk_id_admin = Int32.Parse(Session["Ides"].ToString());
                 obj.Fk_id_cat = Int32.Parse(DDL_category.SelectedValue);
                 obj.Name = txt_name.Text;
                 obj.Brand = txt_brand.Text;
@@ -38,7 +38,7 @@ namespace web_example.Web_Pages.Admin
                 obj.Description = txt_description.Text;
                 obj.Photo = img_upload(FileUpload);
                 obj.Current_stock = Int32.Parse(txt_current_stock.Text);
-
+                
                 obj.Add();
                 
 

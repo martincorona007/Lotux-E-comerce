@@ -105,6 +105,7 @@ namespace web_example
 
             Session["email"] = "";
             Session["role"] = "";
+            Session["Ides"] = "";
             LinkButton3.Visible = true;//login admin
             LinkButton4.Visible = true;//login user
 
@@ -120,6 +121,10 @@ namespace web_example
             //Response.Redirect("~/Web_Pages/page_home.aspx");
             
         }
-        
+
+        protected void LinkButton9_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Web_Pages/Products/page_direction_product.aspx");
+        }
     }
 }

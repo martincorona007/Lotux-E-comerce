@@ -12,12 +12,12 @@ namespace web_example.Web_Pages
         int idsk;
         protected void Page_Load(object sender, EventArgs e)
         {
-            idsk = Int32.Parse(Request.QueryString["Ides"]);
+            //idsk = Int32.Parse(Request.QueryString["Ides"]);
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("page_insert_product_admin.aspx?idk="+idsk);
+            Response.Redirect("page_insert_product_admin.aspx");
         }
 
         protected void Button2_Click(object sender, EventArgs e)
