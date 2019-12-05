@@ -13,5 +13,10 @@ namespace web_example.Web_Pages.Products
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Web_Pages/page_home.aspx");
+        }
     }
 }

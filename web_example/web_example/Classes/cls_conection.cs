@@ -27,7 +27,7 @@ namespace web_example.Classes
         }
         public bool conectar(string tabla)
         {
-            string strConeccion = ConfigurationManager.ConnectionStrings["web_example.Properties.Settings.db_exampleConnectionString"].ConnectionString;
+            string strConeccion = ConfigurationManager.ConnectionStrings["db_exampleConnectionString1"].ConnectionString;
             oconeccion.ConnectionString = strConeccion;
             oconeccion.Open();
             AdaptadorDatos = new SqlDataAdapter("select * from " + tabla, oconeccion);
@@ -39,19 +39,50 @@ namespace web_example.Classes
             return true;
 
         }
-        public bool connect_update(string table)
+        public bool connect_delete(string table,string id)
         {
-            string strConeccion = ConfigurationManager.ConnectionStrings["web_example.Properties.Settings.db_exampleConnectionString"].ConnectionString;
+            string strConeccion = ConfigurationManager.ConnectionStrings["db_exampleConnectionString1"].ConnectionString;
             oconeccion.ConnectionString = strConeccion;
             oconeccion.Open();
-            AdaptadorDatos = new SqlDataAdapter("select name,brand,price,description,photo,current_stock from " + table+"WHERE ID_prod", oconeccion);
+            AdaptadorDatos = new SqlDataAdapter("DELETE FROM " + table+" WHERE ID_prod "+id, oconeccion);
             SqlCommandBuilder ejecutacomandos = new SqlCommandBuilder(AdaptadorDatos);
             Data = new DataSet();
-
+            //AdaptadorDatos.DeleteCommand()
             AdaptadorDatos.Fill(Data, table);
             oconeccion.Close();
             return true;
 
+        }
+        public cls_operations_admin Select(string fName)
+        {
+            var con = ConfigurationManager.ConnectionStrings["db_exampleConnectionString1"].ToString();
+
+            cls_operations_admin matchingPerson = new cls_operations_admin();
+            using (SqlConnection myConnection = new SqlConnection(con))
+            {
+                string oString = "Select name,brand,price,description,photo,current_stock from Products where ID_prod=@fName";
+                SqlCommand oCmd = new SqlCommand(oString, myConnection);
+                oCmd.Parameters.AddWithValue("@fname", fName);
+                myConnection.Open();
+                using (SqlDataReader oReader = oCmd.ExecuteReader())
+                {
+                    while (oReader.Read())
+                    {
+                        //I got problem getting the PRIMARY KEY and the FOREIGN KEY 
+                        //matchingPerson.Fk_id_cat = Int32.Parse(oReader["ID_prod"].ToString());
+
+                        matchingPerson.Name = oReader["name"].ToString();
+                        matchingPerson.Brand = oReader["brand"].ToString();
+                        matchingPerson.Price = float.Parse(oReader["price"].ToString());
+                        matchingPerson.Description = oReader["description"].ToString();
+                        matchingPerson.Photo = oReader["photo"].ToString();
+                        matchingPerson.Current_stock = Int32.Parse(oReader["current_stock"].ToString());
+                    }
+
+                    myConnection.Close();
+                }
+            }
+            return matchingPerson;
         }
         public DataSet Data
         {

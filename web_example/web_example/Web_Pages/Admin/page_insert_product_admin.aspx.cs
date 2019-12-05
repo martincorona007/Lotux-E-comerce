@@ -40,10 +40,10 @@ namespace web_example.Web_Pages.Admin
                 obj.Current_stock = Int32.Parse(txt_current_stock.Text);
                 
                 obj.Add();
-                
 
+                lbl_success.Text = "Product successfully added";
                     //Mostrara un mensaje en caso de ser exitoso la operación
-                    Response.Write("Successful");
+                    ///Response.Write("Successful");
                 //Se redirecciona al login 
                 //Response.Redirect("~/Web_Pages/Admin/page_singup_admin_1.aspx?");
 

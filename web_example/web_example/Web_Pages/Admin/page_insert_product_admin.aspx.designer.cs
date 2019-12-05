@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace web_example.Web_Pages.Admin {
-    
-    
-    public partial class page_insert_product_admin {
-        
+namespace web_example.Web_Pages.Admin
+{
+
+
+    public partial class page_insert_product_admin
+    {
+
         /// <summary>
         /// Image1 control.
         /// </summary>
@@ -20,7 +22,16 @@ namespace web_example.Web_Pages.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image1;
-        
+
+        /// <summary>
+        /// lbl_success control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_success;
+
         /// <summary>
         /// FileUpload control.
         /// </summary>
@@ -29,7 +40,7 @@ namespace web_example.Web_Pages.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload FileUpload;
-        
+
         /// <summary>
         /// lbl_verification control.
         /// </summary>
@@ -38,7 +49,7 @@ namespace web_example.Web_Pages.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_verification;
-        
+
         /// <summary>
         /// txt_name control.
         /// </summary>
@@ -47,16 +58,7 @@ namespace web_example.Web_Pages.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_name;
-        
-        /// <summary>
-        /// RFV_name control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_name;
-        
+
         /// <summary>
         /// DDL_category control.
         /// </summary>
@@ -65,16 +67,7 @@ namespace web_example.Web_Pages.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DDL_category;
-        
-        /// <summary>
-        /// RFV_cate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_cate;
-        
+
         /// <summary>
         /// txt_brand control.
         /// </summary>
@@ -83,16 +76,7 @@ namespace web_example.Web_Pages.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_brand;
-        
-        /// <summary>
-        /// RFV_brand control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_brand;
-        
+
         /// <summary>
         /// txt_current_stock control.
         /// </summary>
@@ -101,16 +85,7 @@ namespace web_example.Web_Pages.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_current_stock;
-        
-        /// <summary>
-        /// RFV_stock control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_stock;
-        
+
         /// <summary>
         /// txt_price control.
         /// </summary>
@@ -119,16 +94,7 @@ namespace web_example.Web_Pages.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_price;
-        
-        /// <summary>
-        /// RFV_price control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_price;
-        
+
         /// <summary>
         /// txt_description control.
         /// </summary>
@@ -137,16 +103,7 @@ namespace web_example.Web_Pages.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_description;
-        
-        /// <summary>
-        /// RFV_descrip control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_descrip;
-        
+
         /// <summary>
         /// btn_come_back control.
         /// </summary>
@@ -155,7 +112,7 @@ namespace web_example.Web_Pages.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_come_back;
-        
+
         /// <summary>
         /// btn_add control.
         /// </summary>

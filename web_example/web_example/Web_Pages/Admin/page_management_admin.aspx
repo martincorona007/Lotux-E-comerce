@@ -35,7 +35,7 @@
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h4>Book Inventory List</h4>
+                           <h4>Product Inventory List</h4>
                         </center>
                      </div>
                   </div>
@@ -46,7 +46,18 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_exampleConnectionString1 %>" SelectCommand="SELECT [ID_prod], [name], [brand], [price], [description], [photo], [current_stock] FROM [Products]"></asp:SqlDataSource>
+                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID_prod" DataSourceID="SqlDataSource1">
+                            <Columns>
+                                <asp:BoundField DataField="ID_prod" HeaderText="ID_prod" InsertVisible="False" ReadOnly="True" SortExpression="ID_prod" />
+                                <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
+                                <asp:BoundField DataField="brand" HeaderText="brand" SortExpression="brand" />
+                                <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
+                                <asp:BoundField DataField="description" HeaderText="description" SortExpression="description" />
+                                <asp:BoundField DataField="photo" HeaderText="photo" SortExpression="photo" />
+                                <asp:BoundField DataField="current_stock" HeaderText="current_stock" SortExpression="current_stock" />
+                            </Columns>
+                         </asp:GridView>
                      </div>
                   </div>
                </div>

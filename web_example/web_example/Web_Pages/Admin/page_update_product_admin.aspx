@@ -27,24 +27,43 @@
                         <hr>
                      </div>
                   </div>
+
+
                   <div class="row">
                       <div class="col-md-4">
-                         <label>Picture</label>
-                         <div class="form-group">
-                            <asp:FileUpload class="form-control" ID="FileUpload1" runat="server" />
-                         </div>
+                          <asp:Label ID="lbl_image" runat="server" Text=""></asp:Label>
+                        <div class="form-group">
+                            <asp:Image ID="Image2" runat="server" width="70px"  />
+                      
+                        </div>
                       </div>
                       
                       <div class="col-md-4">
+                         <label>Select anotherPicture</label>
+                         <div class="form-group">
+                            <asp:FileUpload class="form-control" ID="FileUpload1"  runat="server"  />
+                         </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label>Product ID</label>
+                          
+&nbsp;                   <div class="form-group">
+                           <div class="input-group">
+                              <asp:TextBox CssClass="form-control" ID="txt_ID" runat="server" placeholder="Enter Product ID" BorderStyle="Inset"></asp:TextBox>
+                              <asp:LinkButton class="btn btn-primary" ID="LINK_BUTTUN_ID" runat="server" OnClick="LINK_BUTTUN_ID_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                           </div>
+                        </div>
+                     </div>
+                      <div class="col-md-4">
                         <label>Name Product</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="txt_name" runat="server" placeholder="Enter name product"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="txt_name"  runat="server" ></asp:TextBox>
                         </div>
                       </div>
                       <div class="col-md-4">
                           <label>Category</label>
                         <div class="form-group">
-                           <asp:DropDownList class="form-control" ID="DDL_category" runat="server">
+                           <asp:DropDownList class="form-control" ID="DDL_category"  runat="server" >
                               <asp:ListItem Text="Home" Value="1" />
                               <asp:ListItem Text="Computers" Value="2" />
                               <asp:ListItem Text="Cell phones and tables" Value="3" />
@@ -76,19 +95,19 @@
                          <div class="col-md-4">
                             <label>Brand</label>
                             <div class="form-group">
-                               <asp:TextBox CssClass="form-control" ID="txt_brand" runat="server" placeholder="Enter Brand"></asp:TextBox>
+                               <asp:TextBox CssClass="form-control" ID="txt_brand" runat="server" Text='<%# Bind("brand") %>'></asp:TextBox>
                             </div>
                          </div>
                          <div class="col-md-4">
                             <label>Current Stock (per unit)</label>
                             <div class="form-group">
-                               <asp:TextBox CssClass="form-control" ID="txt_current_stock" runat="server" placeholder="Enter Current Stock (per unit)" TextMode="Number"></asp:TextBox>
+                               <asp:TextBox CssClass="form-control" ID="txt_current_stock" runat="server" Text='<%# Bind("current_stock") %>' TextMode="Number"></asp:TextBox>
                             </div>
                          </div>
                          <div class="col-md-4">
                             <label>Price</label>
                             <div class="form-group">
-                               <asp:TextBox CssClass="form-control" ID="txt_price" runat="server" placeholder="Enter Price"></asp:TextBox>
+                               <asp:TextBox CssClass="form-control" ID="txt_price" runat="server" Text='<%# Bind("price") %>'></asp:TextBox>
                             </div>
                       </div>
                   </div>
@@ -96,7 +115,7 @@
                      <div class="col-12">
                         <label>Product Description</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="txt_description" runat="server" placeholder="Product Description" TextMode="MultiLine" Rows="2"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="txt_description" runat="server" Text='<%# Bind("description") %>' TextMode="MultiLine" Rows="2"></asp:TextBox>
                         </div>
                      </div>
                   </div>

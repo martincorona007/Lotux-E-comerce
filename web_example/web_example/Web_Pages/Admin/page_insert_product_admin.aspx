@@ -34,6 +34,7 @@
                      </div>
                   </div>
                   <div class="row">
+                      <asp:Label ID="lbl_success" runat="server" Font-Bold="True" ForeColor="Green" Text=""></asp:Label>
                       <div class="col-md-4">
                          <label>Picture</label>
                          <div class="form-group">
@@ -46,7 +47,6 @@
                         <label>Name Product</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txt_name" runat="server" placeholder="Enter name product"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFV_name" runat="server" ControlToValidate="txt_name" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                         </div>
                       </div>
                       <div class="col-md-4">
@@ -75,7 +75,6 @@
                               <asp:ListItem Text="Tools" Value="19" />
                              
                            </asp:DropDownList>
-                             <asp:RequiredFieldValidator ID="RFV_cate" runat="server" ControlToValidate="DDL_category" ErrorMessage="Please select this field" Font-Bold="True" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
                         </div>
                       </div>
                   </div>
@@ -87,7 +86,6 @@
                             <label>Brand</label>
                             <div class="form-group">
                                <asp:TextBox CssClass="form-control" ID="txt_brand" runat="server" placeholder="Enter Brand"></asp:TextBox>
-                             <asp:RequiredFieldValidator ID="RFV_brand" runat="server" ControlToValidate="txt_brand" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                                        
                             </div>
                          </div>
@@ -95,14 +93,12 @@
                             <label>Current Stock (per unit)</label>
                             <div class="form-group">
                                <asp:TextBox CssClass="form-control" ID="txt_current_stock" runat="server" placeholder="Enter Current Stock (per unit)" TextMode="Number"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFV_stock" runat="server" ControlToValidate="txt_current_stock" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
                          </div>
                          <div class="col-md-4">
                             <label>Price</label>
                             <div class="form-group">
                                <asp:TextBox CssClass="form-control" ID="txt_price" runat="server" placeholder="Enter Price"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RFV_price" runat="server" ControlToValidate="txt_price" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                             </div>
                       </div>
                   </div>
@@ -111,7 +107,6 @@
                         <label>Product Description</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txt_description" runat="server" placeholder="Product Description" TextMode="MultiLine" Rows="2"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RFV_descrip" runat="server" ControlToValidate="txt_description" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                         </div>
                      </div>
                   </div>

@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace web_example.Web_Pages {
-    
-    
-    public partial class page_management_admin {
-        
+namespace web_example.Web_Pages
+{
+
+
+    public partial class page_management_admin
+    {
+
         /// <summary>
         /// Button1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-        
+
         /// <summary>
         /// Button2 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
-        
+
         /// <summary>
         /// Button3 control.
         /// </summary>
@@ -38,7 +40,16 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button3;
-        
+
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+
         /// <summary>
         /// GridView1 control.
         /// </summary>

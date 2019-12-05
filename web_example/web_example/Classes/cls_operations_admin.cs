@@ -24,6 +24,7 @@ namespace web_example.Classes
             this.photo = po;
             this.current_stock = c;
         }
+        public cls_operations_admin() { }
         public int Fk_id_admin { set { fk_id_admin = value; } get { return fk_id_admin; } }
         public int Fk_id_cat { set { fk_id_cat = value; } get { return fk_id_cat; } }
         public String Name { set { name = value; } get { return name; } }
@@ -32,7 +33,7 @@ namespace web_example.Classes
         public String Description { set { description = value; } get { return description; } }
         public String Photo { set { photo = value; } get { return photo; } }
         public int Current_stock { set { current_stock = value; } get { return current_stock; } }
-        
+       
         public void Add()
         {
             //Se conecta a la tabla espefica con el metodo de conectar de la clase classConexion.

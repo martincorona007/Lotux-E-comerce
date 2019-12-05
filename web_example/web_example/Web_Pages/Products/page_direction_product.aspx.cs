@@ -19,9 +19,25 @@ namespace web_example.Web_Pages.Products
 
         }
 
+        
+
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Response.Redirect("~/Web_Pages/Products/page_pay_products.aspx");
+        }
 
+        protected void btn_1_Click(object sender, EventArgs e)
+        {
+            DateTime today = DateTime.Now;
+            txt_time1.Text = today.ToString("MM-dd-yyyy");//get The actual date.
+            txt_time2.Text = today.AddDays(15).ToString();
+        }
+
+        protected void btn_2_Click(object sender, EventArgs e)
+        {
+            DateTime today = DateTime.Now;
+            txt_time1.Text = today.ToString("MM-dd-yyyy");//get The actual date.
+           txt_time2.Text = today.AddDays(5).ToString();
         }
     }
 }

@@ -1661,12 +1661,15 @@
     <Content Include="Styles\Pictures\adminuser.png" />
     <Content Include="Styles\Pictures\Capture.jpg" />
     <Content Include="Styles\Pictures\delete.png" />
+    <Content Include="Styles\Pictures\file.png" />
     <Content Include="Styles\Pictures\logo.jpg" />
     <Content Include="Styles\Pictures\p1.PNG" />
     <Content Include="Styles\Pictures\p2.PNG" />
     <Content Include="Styles\Pictures\p3.PNG" />
+    <Content Include="Styles\Pictures\pay.png" />
     <Content Include="Styles\Pictures\product.png" />
     <Content Include="Styles\Pictures\rsz_p1.jpg" />
+    <Content Include="Styles\Pictures\success.png" />
     <Content Include="Styles\Pictures\update.png" />
     <Content Include="Styles\Pictures\user.png" />
     <Content Include="Styles\Pictures\u_p1.PNG" />
@@ -1679,12 +1682,9 @@
     <Content Include="Web_Pages\Admin\page_insert_product_admin.aspx" />
     <Content Include="Web_Pages\Admin\page_update_product_admin.aspx" />
     <Content Include="Web_Pages\page_home.aspx" />
-    <Content Include="Web_Pages\Products\page_direction_other_product.aspx" />
     <Content Include="Web_Pages\Products\page_direction_product.aspx" />
     <Content Include="Web_Pages\Products\page_pay_products.aspx" />
-    <Content Include="Web_Pages\Products\page_schedule_product.aspx" />
     <Content Include="Web_Pages\Products\page_successful_product.aspx" />
-    <Content Include="Web_Pages\Products\page_waypay_product.aspx" />
     <Content Include="Web_Pages\User\page_login_user.aspx" />
     <Content Include="Web_Pages\Admin\page_login_admin.aspx" />
     <Content Include="Web_Pages\Admin\page_management_admin.aspx" />
@@ -1752,13 +1752,6 @@
     <Compile Include="Web_Pages\page_home.aspx.designer.cs">
       <DependentUpon>page_home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Web_Pages\Products\page_direction_other_product.aspx.cs">
-      <DependentUpon>page_direction_other_product.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web_Pages\Products\page_direction_other_product.aspx.designer.cs">
-      <DependentUpon>page_direction_other_product.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Web_Pages\Products\page_direction_product.aspx.cs">
       <DependentUpon>page_direction_product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1773,26 +1766,12 @@
     <Compile Include="Web_Pages\Products\page_pay_products.aspx.designer.cs">
       <DependentUpon>page_pay_products.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Web_Pages\Products\page_schedule_product.aspx.cs">
-      <DependentUpon>page_schedule_product.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web_Pages\Products\page_schedule_product.aspx.designer.cs">
-      <DependentUpon>page_schedule_product.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Web_Pages\Products\page_successful_product.aspx.cs">
       <DependentUpon>page_successful_product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Web_Pages\Products\page_successful_product.aspx.designer.cs">
       <DependentUpon>page_successful_product.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Web_Pages\Products\page_waypay_product.aspx.cs">
-      <DependentUpon>page_waypay_product.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Web_Pages\Products\page_waypay_product.aspx.designer.cs">
-      <DependentUpon>page_waypay_product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web_Pages\User\page_login_user.aspx.cs">
       <DependentUpon>page_login_user.aspx</DependentUpon>
