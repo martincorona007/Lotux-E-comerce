@@ -14,14 +14,14 @@ C#
 Note:
 Lotux E-comerce is fictisie company which I create for this proyect,I'll updating the project
 
-##Admin
+## Admin
 ![p1](https://user-images.githubusercontent.com/31390537/70267975-25b55d00-1765-11ea-8a04-f3f33c503e80.PNG)
 
 ![p2](https://user-images.githubusercontent.com/31390537/70268026-3ebe0e00-1765-11ea-86f8-d4064780fadd.PNG)
 
-##User
+## User
 
 ![p3](https://user-images.githubusercontent.com/31390537/70268068-56959200-1765-11ea-9496-9771577cddef.PNG)
 
-##Data Base
+## Data Base
 ![p4](https://user-images.githubusercontent.com/31390537/70268317-d15ead00-1765-11ea-97bb-2726208e8deb.PNG)
