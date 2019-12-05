@@ -12,7 +12,7 @@ ASP.NET
 C#
 
 Note:
-Lotux E-comerce is fictisie company which I create for this proyect,I'll updating the project
+Lotux E-comerce is fictisie company which I create for this proyect,I'll be updating the project.
 
 ## Admin
 ![p1](https://user-images.githubusercontent.com/31390537/70267975-25b55d00-1765-11ea-8a04-f3f33c503e80.PNG)
