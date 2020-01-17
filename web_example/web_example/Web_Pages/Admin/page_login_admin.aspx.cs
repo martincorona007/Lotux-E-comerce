@@ -17,41 +17,36 @@ namespace web_example.Web_Pages
 
         protected void btn_singin_Click(object sender, EventArgs e)
         {
-           
-            int id;
-            //Se utilizara un try catch para poder saber exactamente cual es el error correspondiente.
-            try
-            {
-                //Instancia de clase Login donde se obtendran los metodos necesarios para realizar
-                //la operacion del login.
-                cls_login_admin obj = new cls_login_admin("", "");
-                //Dentro de esta condicional se utiliza el nombre de la instacia
-                //y se manda a llamar al metodo login que realizara
-                //si el usuario esta dentro de la base de datos.
-                if (obj.login(txt_email.Text, txt_password.Text))
-                {
 
-                    id = obj.ID_data; //Se obtiene El ID del usuario del Setter y Getter.
-                    
-                    Session["email"] =txt_email.Text;
-                    Session["role"] = "Admin";
-                    Session["Ides"] = id;
-                  //  txt_email.Text = Session["Value"].ToString();
-                    //En esta linea de codigo realiza la operación de enviar al Web Form pageMenucabanias 
-                    //el ID y el nombre del usuario.
-                    Response.Redirect("~/Web_Pages/page_home.aspx");
-                    lbl_status.Text = "yes";
-                }
-                else
-                {
-                    //Etiqueta en el cual mostrara en caso de ser lo contrario a la condición.
-                    lbl_status.Text = " Access denied";
-                }
-            }
-            catch (Exception ex)
-            {
-                lbl_status.Text = ex.ToString();
-            }
+             int id;
+            try
+             {
+
+                 cls_login_admin obj = new cls_login_admin("", "");
+
+                 if (obj.login(txt_email.Text, txt_password.Text))
+                 {
+
+                     id = obj.ID_data;
+
+                     Session["email"] =txt_email.Text;
+                     Session["role"] = "Admin";
+                     Session["Ides"] = id;
+
+                     Response.Redirect("~/Web_Pages/page_home.aspx");
+                     lbl_status.Text = "yes";
+                 }
+                 else
+                 {
+
+                     lbl_status.Text = " Access denied";
+                 }
+             }
+             catch (Exception ex)
+             {
+                 lbl_status.Text = ex.ToString();
+             }
+            
         }
 
         protected void btn_singup_Click(object sender, EventArgs e)

@@ -1655,8 +1655,8 @@
     <Content Include="fontawesome\webfonts\fa-brands-400.svg" />
     <Content Include="fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
-    <Content Include="Styles\login_admin\custum_style.css" />
-    <Content Include="Styles\login_user\custum_style.css" />
+    <Content Include="Styles\Admin_styles\custum_style.css" />
+    <Content Include="Styles\User_styles\custum_style.css" />
     <Content Include="Styles\Master_page\custum_style.css" />
     <Content Include="Styles\Pictures\adminuser.png" />
     <Content Include="Styles\Pictures\Capture.jpg" />

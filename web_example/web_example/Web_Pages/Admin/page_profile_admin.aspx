@@ -313,80 +313,10 @@
                                         <asp:RequiredFieldValidator ID="RFV_address" runat="server" ControlToValidate="txt_address" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                               
                                    </div>
-                                   <div class="form-group col-sm">
-                                        <asp:Label ID="lbl_type_credit" runat="server" Text="Credit Card Type"></asp:Label>
-                                        <asp:DropDownList ID="DDL_type" class="form-control"  runat="server" OnSelectedIndexChanged="SelectedIndex_Changed" DataTextField="countryName" DataValueField="countryName">
-                                           <asp:ListItem Value="0">Select</asp:ListItem>
-                                                    <asp:ListItem>Master Card</asp:ListItem>
-                                                    <asp:ListItem>American Express</asp:ListItem>
-                                                    <asp:ListItem>Visa</asp:ListItem>
-                                                    <asp:ListItem>Bitcoin Card</asp:ListItem>
-                                                    <asp:ListItem>Etherium Card</asp:ListItem>
-                                         </asp:DropDownList>
-                                         
-                                         <asp:RequiredFieldValidator ID="RFV_type" runat="server" ControlToValidate="DDL_type" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
-                              
-                                    </div>
-                                    <div class="form-group col-sm">
-                                        <asp:Label ID="lbl_credit_card" runat="server" Text="Credit Card Number"></asp:Label>
-                                        <asp:TextBox ID="txt_credit_card" class="form-control" placeholder="0000-000-0000-000" runat="server"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RFV_credit_card" runat="server" ControlToValidate="txt_credit_card" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txt_credit_card" ErrorMessage="Error Credit Card" Font-Bold="True" ForeColor="Red" ValidationExpression="[\d]+((-|\s)?[\d]+)+$"></asp:RegularExpressionValidator>
-                                    </div>
+                                   
+                                    
                                </div>
-                               <div class="form-row">
-                                   <div class="form-group col-sm">
-                                        <asp:Label ID="Label1" runat="server" Text="Expiration Date"></asp:Label>
-                                     <asp:DropDownList ID="DDL_1" class="form-control" runat="server" OnSelectedIndexChanged="SelectedIndex_Changed" DataTextField="countryName"  DataValueField="countryName">
-                                           <asp:ListItem Value="0">Select</asp:ListItem>
-                                                    <asp:ListItem>01</asp:ListItem>
-                                                    <asp:ListItem>02</asp:ListItem>
-                                                    <asp:ListItem>03</asp:ListItem>
-                                                    <asp:ListItem>04</asp:ListItem>
-                                                    <asp:ListItem>05</asp:ListItem>
-                                                    <asp:ListItem>06</asp:ListItem>
-                                                    <asp:ListItem>07</asp:ListItem>
-                                                    <asp:ListItem>08</asp:ListItem>
-                                                    <asp:ListItem>09</asp:ListItem>
-                                                    <asp:ListItem>10</asp:ListItem>
-                                                    <asp:ListItem>11</asp:ListItem>
-                                                    <asp:ListItem>12</asp:ListItem>
-                                                    
-                                         </asp:DropDownList>
-                                         <asp:RequiredFieldValidator ID="RFV_DDL1" runat="server" ControlToValidate="DDL_1" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
                               
-                                    </div>
-                                    <div class="form-group col-sm">
-                                        <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
-                                        <asp:DropDownList ID="DDL2" class="form-control"  runat="server" InitialValue="0" OnSelectedIndexChanged="SelectedIndex_Changed1" DataTextField="countryName" DataValueField="countryName">
-                                           <asp:ListItem Value="0">Select</asp:ListItem>
-                                                    <asp:ListItem>13</asp:ListItem>
-                                                    <asp:ListItem>14</asp:ListItem>
-                                                    <asp:ListItem>15</asp:ListItem>
-                                                    <asp:ListItem>16</asp:ListItem>
-                                                    <asp:ListItem>17</asp:ListItem>
-                                                    <asp:ListItem>18</asp:ListItem>
-                                                    <asp:ListItem>19</asp:ListItem>
-                                                    <asp:ListItem>20</asp:ListItem>
-                                                    <asp:ListItem>21</asp:ListItem>
-                                                    <asp:ListItem>22</asp:ListItem>
-                                                    <asp:ListItem>23</asp:ListItem>
-                                                    <asp:ListItem>24</asp:ListItem>
-                                                    <asp:ListItem>25</asp:ListItem>
-                                                    <asp:ListItem>26</asp:ListItem>
-                                                    <asp:ListItem>27</asp:ListItem>
-                                                    
-                                         </asp:DropDownList>
-                                         <asp:RequiredFieldValidator ID="RFV_ddl2" runat="server" ControlToValidate="DDL2" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
-                              
-                                    </div>
-                                   <div class="form-group col-sm">
-                                        <asp:Label ID="lbl_code_security" runat="server" Text="Code Security"></asp:Label>
-                                        <asp:TextBox ID="txt_code_security" class="form-control" placeholder="000" runat="server"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RFV_code_security" runat="server" ControlToValidate="txt_code_security" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txt_code_security" ErrorMessage="Error Code Security" Font-Bold="True" ForeColor="Red" ValidationExpression="^[0-9]{3}$"></asp:RegularExpressionValidator>
-                                     </div>
-                               </div>
 
                                
                                <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Update" OnClick="Button1_Click" />

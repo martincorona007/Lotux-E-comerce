@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace web_example.Web_Pages {
-    
-    
-    public partial class page_profile_admin {
-        
+namespace web_example.Web_Pages
+{
+
+
+    public partial class page_profile_admin
+    {
+
         /// <summary>
         /// Image2 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image2;
-        
+
         /// <summary>
         /// lbl_first_name control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_first_name;
-        
+
         /// <summary>
         /// txt_first_name control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_first_name;
-        
+
         /// <summary>
         /// RFV_first_name control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_first_name;
-        
+
         /// <summary>
         /// lbl_last_name control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_last_name;
-        
+
         /// <summary>
         /// txt_last_name control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_last_name;
-        
+
         /// <summary>
         /// RFV_last_name control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_last_name;
-        
+
         /// <summary>
         /// lbl_country control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_country;
-        
+
         /// <summary>
         /// DDL_country control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DDL_country;
-        
+
         /// <summary>
         /// RFV_country control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_country;
-        
+
         /// <summary>
         /// lbl_city control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_city;
-        
+
         /// <summary>
         /// txt_city control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_city;
-        
+
         /// <summary>
         /// RFV_city control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_city;
-        
+
         /// <summary>
         /// lbl_cell_phone control.
         /// </summary>
@@ -137,7 +139,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_cell_phone;
-        
+
         /// <summary>
         /// lbl_lada control.
         /// </summary>
@@ -146,7 +148,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_lada;
-        
+
         /// <summary>
         /// txt_cell_phone control.
         /// </summary>
@@ -155,7 +157,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_cell_phone;
-        
+
         /// <summary>
         /// RFV_cell_phone control.
         /// </summary>
@@ -164,7 +166,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_cell_phone;
-        
+
         /// <summary>
         /// RegularExpressionValidator2 control.
         /// </summary>
@@ -173,7 +175,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
-        
+
         /// <summary>
         /// lbl_zip_code control.
         /// </summary>
@@ -182,7 +184,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_zip_code;
-        
+
         /// <summary>
         /// txt_zipcode control.
         /// </summary>
@@ -191,7 +193,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_zipcode;
-        
+
         /// <summary>
         /// RFV_zipcode control.
         /// </summary>
@@ -200,7 +202,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_zipcode;
-        
+
         /// <summary>
         /// lbl_address control.
         /// </summary>
@@ -209,7 +211,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_address;
-        
+
         /// <summary>
         /// txt_address control.
         /// </summary>
@@ -218,7 +220,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_address;
-        
+
         /// <summary>
         /// RFV_address control.
         /// </summary>
@@ -227,160 +229,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_address;
-        
-        /// <summary>
-        /// lbl_type_credit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_type_credit;
-        
-        /// <summary>
-        /// DDL_type control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDL_type;
-        
-        /// <summary>
-        /// RFV_type control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_type;
-        
-        /// <summary>
-        /// lbl_credit_card control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_credit_card;
-        
-        /// <summary>
-        /// txt_credit_card control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_credit_card;
-        
-        /// <summary>
-        /// RFV_credit_card control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_credit_card;
-        
-        /// <summary>
-        /// RegularExpressionValidator1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// DDL_1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDL_1;
-        
-        /// <summary>
-        /// RFV_DDL1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_DDL1;
-        
-        /// <summary>
-        /// Label2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-        
-        /// <summary>
-        /// DDL2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDL2;
-        
-        /// <summary>
-        /// RFV_ddl2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_ddl2;
-        
-        /// <summary>
-        /// lbl_code_security control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_code_security;
-        
-        /// <summary>
-        /// txt_code_security control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_code_security;
-        
-        /// <summary>
-        /// RFV_code_security control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_code_security;
-        
-        /// <summary>
-        /// RegularExpressionValidator3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
-        
+
         /// <summary>
         /// Button1 control.
         /// </summary>

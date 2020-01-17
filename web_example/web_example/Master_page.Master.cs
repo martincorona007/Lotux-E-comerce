@@ -122,9 +122,7 @@ namespace web_example
             
         }
 
-        protected void LinkButton9_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Web_Pages/Products/page_direction_product.aspx");
-        }
+        
+       
     }
 }
