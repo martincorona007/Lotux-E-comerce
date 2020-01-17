@@ -7,20 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace web_example.Web_Pages {
-    
-    
-    public partial class page_singup_admin {
-        
+namespace web_example.Web_Pages
+{
+
+
+    public partial class page_singup_admin
+    {
+
         /// <summary>
-        /// Image1 control.
+        /// psa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
-        
+        protected global::System.Web.UI.WebControls.Image psa;
+
         /// <summary>
         /// lbl_email control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_email;
-        
+
         /// <summary>
         /// txt_email control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_email;
-        
+
         /// <summary>
         /// RFVEmail control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVEmail;
-        
+
         /// <summary>
         /// REVemail control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator REVemail;
-        
+
         /// <summary>
         /// lbl_verification control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_verification;
-        
+
         /// <summary>
         /// lbl_password1 control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_password1;
-        
+
         /// <summary>
         /// txt_password1 control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_password1;
-        
+
         /// <summary>
         /// RFVpassword control.
         /// </summary>
@@ -92,7 +94,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVpassword;
-        
+
         /// <summary>
         /// Label1 control.
         /// </summary>
@@ -101,7 +103,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-        
+
         /// <summary>
         /// txt_password2 control.
         /// </summary>
@@ -110,7 +112,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_password2;
-        
+
         /// <summary>
         /// RFVCpassword control.
         /// </summary>
@@ -119,7 +121,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVCpassword;
-        
+
         /// <summary>
         /// CVpassword control.
         /// </summary>
@@ -128,7 +130,7 @@ namespace web_example.Web_Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CompareValidator CVpassword;
-        
+
         /// <summary>
         /// Button1 control.
         /// </summary>
