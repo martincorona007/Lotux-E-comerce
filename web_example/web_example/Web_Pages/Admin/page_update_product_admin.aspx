@@ -2,65 +2,48 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
-      <div class="row">
-         <div class="col-md-12">
-            <div class="card">
-               <div class="card-body">
-                  <div class="row">
-                     <div class="col">
-                        <center>
-                           <h4>Product Details</h4>
-                        </center>
+    
+    <section class="update">
+        <div class="container">
+               <div class="section-title">
+                   <h1>Product Details</h1>
+                   <div class="pick">
+                            <asp:Image ID="Picture" runat="server"  src="../../Styles/Pictures/update.png" ></asp:Image>
                      </div>
-                  </div>
-                  <div class="row">
-                     <div class="col">
-                        <center>
-                           
-                            <asp:Image ID="Image1" runat="server" width="100px" src="../../Styles/Pictures/update.png" ></asp:Image>
-                        </center>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col">
-                        <hr>
-                     </div>
-                  </div>
-
-
-                  <div class="row">
-                      <div class="col-md-4">
-                          <asp:Label ID="lbl_image" runat="server" Text=""></asp:Label>
-                        <div class="form-group">
-                            <asp:Image ID="Image2" runat="server" width="70px"  />
-                      
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-4">
-                         <label>Select anotherPicture</label>
-                         <div class="form-group">
-                            <asp:FileUpload class="form-control" ID="FileUpload1"  runat="server"  />
-                         </div>
-                      </div>
-                      <div class="col-md-4">
+               </div>
+        </div>
+        <div class="sect-a">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                     <div class="col-md-6">
                         <label>Product ID</label>
                           
-&nbsp;                   <div class="form-group">
+                       <div class="form-group">
                            <div class="input-group">
                               <asp:TextBox CssClass="form-control" ID="txt_ID" runat="server" placeholder="Enter Product ID" BorderStyle="Inset"></asp:TextBox>
                               <asp:LinkButton class="btn btn-primary" ID="LINK_BUTTUN_ID" runat="server" OnClick="LINK_BUTTUN_ID_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
                            </div>
                         </div>
                      </div>
-                      <div class="col-md-4">
+                    <div class="col-md-6">
                         <label>Name Product</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="txt_name"  runat="server" ></asp:TextBox>
                         </div>
-                      </div>
-                      <div class="col-md-4">
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                         <label>Select another Picture</label>
+                         <div class="form-group">
+                            <asp:FileUpload class="form-control" ID="FileUpload1"  runat="server"  />
+                         </div>
+                 </div>
+                <div class="col-md-8">
+                   <div class="row">
+                    <div class="col-md-6">
                           <label>Category</label>
                         <div class="form-group">
                            <asp:DropDownList class="form-control" ID="DDL_category"  runat="server" >
@@ -86,32 +69,44 @@
                              
                            </asp:DropDownList>
                         </div>
-                      </div>
-                  </div>
-                  
-                     
-                  </div>
-                  <div class="row">
-                         <div class="col-md-4">
+                    </div>
+                    <div class="col-md-6">
                             <label>Brand</label>
-                            <div class="form-group">
+                        <div class="form-group">
                                <asp:TextBox CssClass="form-control" ID="txt_brand" runat="server" Text='<%# Bind("brand") %>'></asp:TextBox>
-                            </div>
                          </div>
-                         <div class="col-md-4">
+                      </div>
+                   
+                   </div>
+                </div>
+                <div class="col-md-4">
+                          <asp:Label ID="lbl_image" runat="server" Text="Picture "></asp:Label>
+                        <div class="form-group">
+                            <asp:Image ID="Image2" runat="server"/>
+                      
+                        </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
                             <label>Current Stock (per unit)</label>
                             <div class="form-group">
                                <asp:TextBox CssClass="form-control" ID="txt_current_stock" runat="server" Text='<%# Bind("current_stock") %>' TextMode="Number"></asp:TextBox>
                             </div>
                          </div>
-                         <div class="col-md-4">
+                         <div class="col-md-6">
                             <label>Price</label>
                             <div class="form-group">
                                <asp:TextBox CssClass="form-control" ID="txt_price" runat="server" Text='<%# Bind("price") %>'></asp:TextBox>
                             </div>
-                      </div>
-                  </div>
-                  <div class="row">
+                        </div>
+                    </div>
+                 </div>
+                
+                
+            
+            </div>
+            <div class="row">
                      <div class="col-12">
                         <label>Product Description</label>
                         <div class="form-group">
@@ -119,22 +114,29 @@
                         </div>
                      </div>
                   </div>
-                    
-                  <div class="row">
-                     <div class="col-4">
-                        <asp:Button ID="btn_come_back" class="btn btn-lg btn-block btn-warning" runat="server" Text="Back to management" />
-                     </div>
-                     
-                     <div class="col-4">
-                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-success" runat="server" Text="Update" />
-                     </div>
-                     
-                  </div>
-               </div>
-            </div>
-            
-            <br>
-         </div>
          
-    </div>
+        </div>    
+        <div class="container">
+                <div class="alinear">
+                    <div class="row">
+                        <div class="col-md-4">
+
+                        </div>
+                        <div class="col-md-4">
+                            <asp:Button ID="btn_come_back" class="btn btn-lg btn-block btn-warning" runat="server" Text="Back to management" />
+                         </div>
+                     
+                         <div class="col-md-4">
+                            <asp:Button ID="Button3" class="btn btn-lg btn-block btn-success" runat="server" Text="Update" />
+                         </div>
+
+                    </div>
+
+                </div>
+                     
+                     
+          </div>
+    </section>
+        
+   
 </asp:Content>

@@ -122,7 +122,10 @@ namespace web_example
             
         }
 
-        
-       
+        protected void LinkButton9_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Web_Pages/Admin/page_update_product_admin.aspx");
+
+        }
     }
 }

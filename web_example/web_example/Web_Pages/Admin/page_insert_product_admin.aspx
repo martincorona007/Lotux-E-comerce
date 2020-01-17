@@ -16,25 +16,25 @@
         </div>
         <div class="container">
             <div class="row">
-                <asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="Green" Text=""></asp:Label>
+                <asp:Label ID="lbl_success" runat="server" Font-Bold="True" ForeColor="Green" Text=""></asp:Label>
                       <div class="col-md-4">
                          <label>Picture</label>
                          <div class="form-group">
-                            <asp:FileUpload class="form-control" ID="FileUpload1" runat="server" CssClass="auto-style1" />
+                            <asp:FileUpload class="form-control" ID="FileUpload" runat="server" CssClass="auto-style1" />
                          </div>
-                          <asp:Label ID="Label2" runat="server" Font-Bold="True" ForeColor="Red" Text=""></asp:Label>
+                          <asp:Label ID="lbl_verification" runat="server" Font-Bold="True" ForeColor="Red" Text=""></asp:Label>
                       </div>
                       
                       <div class="col-md-4">
                         <label>Name Product</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Enter name product"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="txt_name" runat="server" placeholder="Enter name product"></asp:TextBox>
                         </div>
                       </div>
                       <div class="col-md-4">
                           <label>Category</label>
                         <div class="form-group">
-                           <asp:DropDownList class="form-control" ID="DropDownList1" runat="server">
+                           <asp:DropDownList class="form-control" ID="DDL_category" runat="server">
                               <asp:ListItem Value="0">Select</asp:ListItem>
                               <asp:ListItem Text="Home" Value="1" />
                               <asp:ListItem Text="Computers" Value="2" />
@@ -64,20 +64,20 @@
                          <div class="col-md-4">
                             <label>Brand</label>
                             <div class="form-group">
-                               <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Enter Brand"></asp:TextBox>
+                               <asp:TextBox CssClass="form-control" ID="txt_brand" runat="server" placeholder="Enter Brand"></asp:TextBox>
                                        
                             </div>
                          </div>
                          <div class="col-md-4">
                             <label>Current Stock (per unit)</label>
                             <div class="form-group">
-                               <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Enter Current Stock (per unit)" TextMode="Number"></asp:TextBox>
+                               <asp:TextBox CssClass="form-control" ID="txt_current_stock" runat="server" placeholder="Enter Current Stock (per unit)" TextMode="Number"></asp:TextBox>
                             </div>
                          </div>
                          <div class="col-md-4">
                             <label>Price</label>
                             <div class="form-group">
-                               <asp:TextBox CssClass="form-control" ID="TextBox4" runat="server" placeholder="Enter Price"></asp:TextBox>
+                               <asp:TextBox CssClass="form-control" ID="txt_price" runat="server" placeholder="Enter Price"></asp:TextBox>
                             </div>
                       </div>
                   </div>
@@ -85,7 +85,7 @@
                      <div class="col-12">
                         <label>Product Description</label>
                         <div class="form-group">
-                           <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Product Description" TextMode="MultiLine" Rows="2"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="txt_description" runat="server" placeholder="Product Description" TextMode="MultiLine" Rows="2"></asp:TextBox>
                         </div>
                      </div>
                   </div>

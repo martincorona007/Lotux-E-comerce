@@ -4,7 +4,6 @@ Front-end
     page_singup_admin
     page_singup_admin_1
     page_singup_admin_2
-    page_update_product_admin
     page_management_admin
 
     page_profile_user
@@ -17,6 +16,7 @@ Front-end
 	page_successful_product
   Done
       page_insert_product_admin
+      page_update_product_admin	
 
 Back-end
     page_delete_product_admin
