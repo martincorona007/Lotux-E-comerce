@@ -11,7 +11,7 @@
                 <div class="pick">
                     <asp:Image ID="Picture" runat="server"  src="../../Styles/Pictures/product.png" ></asp:Image>
                 </div>
-                    
+
              </div>
         </div>
         <div class="container">
