@@ -1,0 +1,112 @@
+﻿/**************************************************               ************************************************** 
+***************************************************  GENERIC CSS  **************************************************
+***************************************************               **************************************************
+*/
+.section-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-title h1 {
+        position: relative;
+        text-align: center;
+        color: #333;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+}
+
+.section-title h2:after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        width: 60px;
+        height: 1px;
+        background-color: #129CF3;
+        margin-left: -30px;
+}
+/*size of the picture*/
+#ContentPlaceHolder1_Picture {
+    width: 100px;
+}
+/*put the image to the center*/
+.pick {
+    text-align: center;
+}
+.alinear { /*align button only for this page*/
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.a1 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+/**************************************************          ************************************************** 
+***************************************************  ADMIN   **************************************************
+***************************************************          **************************************************
+*/
+/*=============page_insert_product_admin.aspx=============*/
+#ContentPlaceHolder1_Button1 {
+    font-size: 21px;
+}
+#ContentPlaceHolder1_Button2 {
+    font-size: 21px;
+}
+/*=============page_update_product_admin.aspx=============*/
+.sect-a{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#ContentPlaceHolder1_Image2 {
+    width: 100px;
+}
+/*=============page_singup_admin.aspx=============*/
+#ContentPlaceHolder1_psa{
+    width: 650px;
+}
+
+#ContentPlaceHolder1_lbl_1{
+    text-align: center;
+}
+
+/*=============page_profile_admin.aspx=============*/
+#ContentPlaceHolder1_pro1 {
+    width: 100px;
+}
+#ContentPlaceHolder1_Btn1{
+
+}
+#ContentPlaceHolder1_Btn2 {
+
+}
+/**************************************************          ************************************************** 
+***************************************************  User    **************************************************
+***************************************************          **************************************************
+*/
+/**************************************************            ************************************************** 
+***************************************************  Product   **************************************************
+***************************************************            **************************************************
+*/
+/*=============page_profile_user.aspx=============*/
+#ContentPlaceHolder1_Image1 {
+    width: 100px;
+}
+#lamisma {
+    width: 520px;
+    padding: 55px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 1px #57b1dc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#image {
+    background-image: url('../Pictures/rsz_p1.jpg');
+    width: 97%;
+    height: 550px;
+}

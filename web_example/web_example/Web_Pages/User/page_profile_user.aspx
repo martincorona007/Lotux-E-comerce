@@ -2,26 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
-        
-            <div class="">
-               <div class="card">
-                   <div class="card-body">
-                       <div class="row">
-                         <div class="col">
-                            <center>
-                               <asp:Image ID="Image2" runat="server" ImageUrl="~/Styles/Pictures/user.png" width="100px" />
-                            </center>
-                         </div>
-                      </div>
+    
+    <header>
+        <div class="section-title">
+            <h1>Your Profile</h1>
+            <div class="pick">
+                <asp:Image ID="pro1" runat="server" ImageUrl="~/Styles/Pictures/user.png" />
+            </div>
+        </div>
+    </header>
+    <article class="a1">
+        <section>
+            <div>
                       <div class="row">
-                         <div class="col">
-                            <center>
-                               <h4>Your Profile</h4>
-                             </center>
-                         </div>
-                      </div>
-                       <div class="row">
                            <div class="col">
                                <div class="form-row">
                                    <div class="form-group col-sm">
@@ -334,10 +327,15 @@
                                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txt_credit_card" ErrorMessage="Error Credit Card" Font-Bold="True" ForeColor="Red" ValidationExpression="[\d]+((-|\s)?[\d]+)+$"></asp:RegularExpressionValidator>
                                     </div>
                                </div>
-                               <div class="form-row">
-                                   <div class="form-group col-sm">
+                               <div id="ContentPlaceHolder1_lbl_1">
                                         <asp:Label ID="Label1" runat="server" Text="Expiration Date"></asp:Label>
-                                     <asp:DropDownList ID="DDL_1" class="form-control" runat="server" OnSelectedIndexChanged="SelectedIndex_Changed4" DataTextField="countryName"  DataValueField="countryName">
+                                   
+                                    </div>
+                               <div class="form-row">
+                                    
+                                    <div class="form-group col-md-4">
+                                    <asp:Label ID="Label3" runat="server" Text=" "></asp:Label>
+                                        <asp:DropDownList ID="DDL_1" class="form-control" runat="server" OnSelectedIndexChanged="SelectedIndex_Changed" DataTextField="countryName"  DataValueField="countryName">
                                            <asp:ListItem Value="0">Select</asp:ListItem>
                                                     <asp:ListItem>01</asp:ListItem>
                                                     <asp:ListItem>02</asp:ListItem>
@@ -353,12 +351,11 @@
                                                     <asp:ListItem>12</asp:ListItem>
                                                     
                                          </asp:DropDownList>
-                                         <asp:RequiredFieldValidator ID="RFV_DDL1" runat="server" ControlToValidate="DDL_1" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
-                              
+                                      
                                     </div>
-                                    <div class="form-group col-sm">
-                                        <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
-                                        <asp:DropDownList ID="DDL2" class="form-control"  runat="server" InitialValue="0" OnSelectedIndexChanged="SelectedIndex_Changed1" DataTextField="countryName" DataValueField="countryName">
+                                    <div class="form-group col-md-4">
+                                        <asp:Label ID="Label2" runat="server" Text=" "></asp:Label>
+                                        <asp:DropDownList ID="DDL_2" class="form-control"  runat="server" InitialValue="0" OnSelectedIndexChanged="SelectedIndex_Changed1" DataTextField="countryName" DataValueField="countryName">
                                            <asp:ListItem Value="0">Select</asp:ListItem>
                                                     <asp:ListItem>13</asp:ListItem>
                                                     <asp:ListItem>14</asp:ListItem>
@@ -377,27 +374,25 @@
                                                     <asp:ListItem>27</asp:ListItem>
                                                     
                                          </asp:DropDownList>
-                                         <asp:RequiredFieldValidator ID="RFV_ddl2" runat="server" ControlToValidate="DDL2" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
-                              
+                                       
                                     </div>
-                                   <div class="form-group col-sm">
+                                    <div class="form-group col-md-4">
+                                        
                                         <asp:Label ID="lbl_code_security" runat="server" Text="Code Security"></asp:Label>
                                         <asp:TextBox ID="txt_code_security" class="form-control" placeholder="000" runat="server"></asp:TextBox>
                                         <asp:RequiredFieldValidator ID="RFV_code_security" runat="server" ControlToValidate="txt_code_security" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                                         <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txt_code_security" ErrorMessage="Error Code Security" Font-Bold="True" ForeColor="Red" ValidationExpression="^[0-9]{3}$"></asp:RegularExpressionValidator>
                                      </div>
-                               </div>
-
+                                </div>
                                
-                               <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Update" OnClick="Button1_Click" />
+                               <div class="alinear">
+                                   <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Update" OnClick="Button1_Click" />
             
-                               
-                           </div>
+                               </div>
                        </div>
-                   </div>
-
-               </div>              
+ 
             </div>
-        
-    </div>
+        </section>
+    </article>
+
 </asp:Content>

@@ -2,33 +2,31 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="container">
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-               <div class="card">
-                   <div class="card-body">
-                       <div class="row">
-                           <div class="col">
-                               <!--Picture--->
-                               <div>
-                                   <asp:Image ID="Image1" runat="server" ImageUrl="~/Styles/Pictures/p2.PNG" width="502" height="70" />
-                               </div>
-                               <!--Picture--->
-                               <div class="form-group">
-                                    <asp:Label ID="lbl_first_name" runat="server" Text="First Name"></asp:Label>
-                                    <asp:TextBox ID="txt_first_name" class="form-control" placeholder="Enter First name" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RFV_first_name" runat="server" ControlToValidate="txt_first_name" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                               </div>
-                               <div class="form-group">
-                                   <asp:Label ID="lbl_last_name" runat="server" Text="Last Name"></asp:Label>
-                                   <asp:TextBox ID="txt_last_name" class="form-control" placeholder="Enter Last name" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RFV_last_name" runat="server" ControlToValidate="txt_last_name" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                              
-                               </div>
-                               <div>
-
-                               </div>
+    <header>
+        <div class="section-title">
+            <h1>Sing Up</h1>
+            <div class="pick">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Styles/Pictures/p2.PNG"  />
+            </div>
+        </div>
+    </header> 
+    <article class="a1">
+        <section>
+            <div>
+                                   
+                               
                                <div class="form-row">
+                                   <div class="form-group col-md-6">
+                                        <asp:Label ID="lbl_first_name" runat="server" Text="First Name"></asp:Label>
+                                        <asp:TextBox ID="txt_first_name" class="form-control" placeholder="Enter First name" runat="server"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RFV_first_name" runat="server" ControlToValidate="txt_first_name" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
+                                   </div>
+                                   <div class="form-group col-md-6">
+                                       <asp:Label ID="lbl_last_name" runat="server" Text="Last Name"></asp:Label>
+                                       <asp:TextBox ID="txt_last_name" class="form-control" placeholder="Enter Last name" runat="server"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RFV_last_name" runat="server" ControlToValidate="txt_last_name" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
+                              
+                                   </div>
                                    <div class="form-group col-md-6">
                                        <asp:Label ID="lbl_country" runat="server" Text="Contry"></asp:Label>
                                        <asp:DropDownList ID="DDL_country" class="form-control"  runat="server" AutoPostBack="True" OnSelectedIndexChanged="SelectedIndex_Changed" DataTextField="countryName"  DataValueField="countryName">
@@ -294,22 +292,21 @@
                               
                                     </div>
                                </div>
-                               <div class="form-group col-md-6">
+                               <div class="form-group col-md-12">
                                         <asp:Label ID="lbl_address" runat="server" Text="Address"></asp:Label>
-                                        <asp:TextBox ID="txt_address" class="form-control" placeholder="Enter Address" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txt_address" class="form-control" placeholder="Enter Address" TextMode="MultiLine" Rows="2" runat="server"></asp:TextBox>
                                         <asp:RequiredFieldValidator ID="RFV_address" runat="server" ControlToValidate="txt_address" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                               
                                </div>
-                               <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Next" OnClick="Button1_Click" />
+                                <div class="alinear">
+                                     <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Next" OnClick="Button1_Click" />
+                                </div>
             
-                               
-                           </div>
-                       </div>
-                   </div>
-
-               </div>              
             </div>
-        </div>
-    </div>
+        </section>
+    </article>
+    
+    
+    
     
 </asp:Content>

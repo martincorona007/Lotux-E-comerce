@@ -28,8 +28,10 @@
     <link href="Styles/Master_page/custum_style.css" rel="stylesheet" />
     <link href="Styles/sing_up/custum_style.css" rel="stylesheet" />
     
-    <%----Admin Styles-----%>
-    <link href="Styles/Admin_styles/custum_style.css" rel="stylesheet" />
+    <%----Custom Styles-----%>
+    <link href="Styles/custom_styles/custum_style.css" rel="stylesheet" />
+    
+  
 </head>
 <body>
     <form id="form1" runat="server">

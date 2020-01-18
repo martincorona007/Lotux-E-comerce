@@ -2,26 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
-        
-            <div class="">
-               <div class="card">
-                   <div class="card-body">
-                       <div class="row">
-                         <div class="col">
-                            <center>
-                               <asp:Image ID="Image2" runat="server" ImageUrl="~/Styles/Pictures/adminuser.png" width="100px" />
-                            </center>
-                         </div>
-                      </div>
-                      <div class="row">
-                         <div class="col">
-                            <center>
-                               <h4>Your Profile</h4>
-                             </center>
-                         </div>
-                      </div>
-                       <div class="row">
+    <header>
+        <div class="section-title">
+            <h1>Your Profile</h1>
+            <div class="pick">
+                   <asp:Image ID="pro1" runat="server" ImageUrl="~/Styles/Pictures/adminuser.png"  />
+                            
+            </div>
+        </div>
+    </header>
+    <article class="a1">
+        <section>
+            <div>
+                 <div class="row">
                            <div class="col">
                                <div class="form-row">
                                    <div class="form-group col-sm">
@@ -309,7 +302,7 @@
                                <div class="form-row">
                                    <div class="form-group col-sm">
                                         <asp:Label ID="lbl_address" runat="server" Text="Address"></asp:Label>
-                                        <asp:TextBox ID="txt_address" class="form-control" placeholder="Enter Address" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txt_address" class="form-control" placeholder="Enter Address" TextMode="MultiLine" Rows="2" runat="server"></asp:TextBox>
                                         <asp:RequiredFieldValidator ID="RFV_address" runat="server" ControlToValidate="txt_address" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                               
                                    </div>
@@ -318,17 +311,16 @@
                                </div>
                               
 
-                               
-                               <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Update" OnClick="Button1_Click" />
-            
+                               <div class="alinear">
+                                   <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Update" OnClick="Button1_Click" />
+                               </div>
                                
                            </div>
                        </div>
-                   </div>
-
-               </div>              
             </div>
-        
-    </div>
+        </section>
+    </article>
+
+    
 
 </asp:Content>

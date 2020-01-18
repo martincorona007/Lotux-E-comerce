@@ -1,15 +1,11 @@
 Front-end
     page_delete_product_admin
-    page_profile_admin
+    
     
     page_management_admin
 
-    page_profile_user
-    page_singup_user
-    page_singup_user_1
-    page_singup_user_2
+    
 
-	page_direction_product
 	page_pay_products
 	page_successful_product
   Done
@@ -18,6 +14,12 @@ Front-end
       page_singup_admin
       page_singup_admin_1
       page_singup_admin_2	
+      page_profile_admin
+      page_profile_user
+      page_singup_user
+      page_singup_user_1
+      page_singup_user_2
+      page_direction_product
 
 Back-end
     page_delete_product_admin

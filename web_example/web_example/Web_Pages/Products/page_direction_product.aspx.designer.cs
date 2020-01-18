@@ -105,15 +105,6 @@ namespace web_example.Web_Pages.Products
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_zipcode;
 
         /// <summary>
-        /// txt_direction control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_direction;
-
-        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -123,22 +114,22 @@ namespace web_example.Web_Pages.Products
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Button1 control.
+        /// Btn1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button Btn1;
 
         /// <summary>
-        /// Button2 control.
+        /// Btn2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button Btn2;
 
         /// <summary>
         /// txt_time1 control.
@@ -166,6 +157,15 @@ namespace web_example.Web_Pages.Products
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_time2;
+
+        /// <summary>
+        /// txt_direction control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_direction;
 
         /// <summary>
         /// btn_1 control.

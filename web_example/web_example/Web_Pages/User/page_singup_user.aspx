@@ -2,19 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-               <div class="card">
-                   <div class="card-body">
-                       <div class="row">
-                           <div class="col">
-                               
-                               <!--Picture--->
-                               <div>
-                                   <asp:Image ID="Image1" runat="server" ImageUrl="~/Styles/Pictures/p1.PNG" width="502" height="70" />
-                               </div>
-                               <!--Picture--->
+
+    <header>
+        <div class="section-title">
+            <h1>Sing Up</h1>
+            <div class="pick">
+                      <asp:Image ID="psa" runat="server" ImageUrl="~/Styles/Pictures/p1.PNG" />
+            </div>
+        </div>
+    </header>
+    <article class="a1">
+        <section>
+            <div>
+                
                                  <div class="form-group">
                                     <asp:Label ID="lbl_email" runat="server" Text="Email "></asp:Label>
                                     <asp:TextBox ID="txt_email" class="form-control"  Placeholder="Enter Email" runat="server"></asp:TextBox>
@@ -62,17 +62,17 @@
                                         
                                      
                                     </div>
-                                      <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Next" OnClick="Button1_Click" />
+                                      
             
                                  </div>
-                           </div>
-                       </div>
-                   </div>
-
-               </div>              
+                                   <div class="alinear">
+                                              <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Next" OnClick="Button1_Click" />
+            
+                                   </div>
             </div>
-        </div>
-    </div>
-    
+        </section>
+    </article>
+
+   
 
 </asp:Content>
