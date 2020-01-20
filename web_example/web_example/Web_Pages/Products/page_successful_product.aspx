@@ -2,51 +2,32 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
+    
+    <div class="container-fluid-a">
         <div class="row">
             <div class="col-md-12">
                <div class="card">
                    <div class="card-body">
                        <div class="row">
-                           <div class="col">
-                               <!--Picture--->
-                               <div>
-                                   <center>
-                                           <asp:Image ID="Image1" runat="server" ImageUrl="~/Styles/Pictures/success.png" width="100px" />
-                                   </center>
-                               </div>
-                               <!--Picture--->
-                               
-                               <div class="row">
-                                   <div class="col">
-                                         
-                                            <center>
-                                               <h4>Successful Operation</h4>
-                                             </center>
-                                             
-                                        
-                                        <div class="row">
-                                            <center>
-                                                    <asp:Label ID="Label1" runat="server" Text="Thank you for buy in Lotux E-comerce, We'll send you a email with the details of your product ship"></asp:Label>
-                                            </center>
-                                        </div>
-                                        
+                       <div class="col">
+                               <div class="section-title">
+                                           <h1>Successful Operation</h1>
+                                    <div class="pick">
+                                         <asp:Image ID="Image1" runat="server" ImageUrl="~/Styles/Pictures/success.png" width="100px" />
                                     </div>
-                                      
-                                  
-                                   
                                </div>
-                               <div class="row">
-
-                               </div>
-                               <div class="row">
-                                   <div class="col">
+                               <div class="section-title">
+                                        <asp:Label ID="Label1" runat="server" Text="Thank you for buy in Lotux E-comerce, We'll send you a email with the details of your product ship"></asp:Label>
+                                    </div>
+                                
+                               <div class="alinear">
                                       <asp:Button ID="btn_1" class="btn btn-primary btn-lg" runat="server" Text="Next" OnClick="Button1_Click" />
-                                   </div >
+                               </div >
                                    
-                               </div>
                                                
                            </div>
+                       
+                       
                        </div>
                    </div>
 

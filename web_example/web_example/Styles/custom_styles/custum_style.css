@@ -89,7 +89,15 @@
 ***************************************************  Product   **************************************************
 ***************************************************            **************************************************
 */
-/*=============page_profile_user.aspx=============*/
+.container-fluid-a{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+.col-a{
+    padding-bottom: 220px;
+}
 #ContentPlaceHolder1_Image1 {
     width: 100px;
 }
