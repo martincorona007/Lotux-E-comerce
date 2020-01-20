@@ -30,5 +30,10 @@ namespace web_example.Web_Pages
         {
             Response.Redirect("page_delete_product_admin.aspx");
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

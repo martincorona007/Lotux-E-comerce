@@ -2,30 +2,36 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+   
+    
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-            <div class="card text-center">
-               <div class="card-body">
+        <div id="wi-xperia">
+           <div class="row">
+                <div class="col-md-12">
+                    <div class="card text-center">
+                       <div class="card-body">
                   
                     
-                  <div class="row">
-                     <div class="col-4">
-                        <asp:Button ID="Button1" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" OnClick="Button1_Click" />
-                     </div>
-                     <div class="col-4">
-                        <asp:Button ID="Button2" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" OnClick="Button2_Click" />
-                     </div>
-                     <div class="col-4">
-                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" OnClick="Button3_Click" />
-                     </div>
-                  </div>
+                          <div class="row">
+                             <div class="col-4">
+                                <asp:Button ID="Button1" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" OnClick="Button1_Click" />
+                             </div>
+                             <div class="col-4">
+                                <asp:Button ID="Button2" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" OnClick="Button2_Click" />
+                             </div>
+                             <div class="col-4">
+                                <asp:Button ID="Button3" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" OnClick="Button3_Click" />
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+            
                </div>
             </div>
-            
-         </div>
+        
         </div>
-      <div class="row">
+        <div id="wi-xperia-a">
+            <div class="row">
          
          
           
@@ -50,12 +56,52 @@
                         <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID_prod" DataSourceID="SqlDataSource1">
                             <Columns>
                                 <asp:BoundField DataField="ID_prod" HeaderText="ID_prod" InsertVisible="False" ReadOnly="True" SortExpression="ID_prod" />
-                                <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
-                                <asp:BoundField DataField="brand" HeaderText="brand" SortExpression="brand" />
-                                <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
-                                <asp:BoundField DataField="description" HeaderText="description" SortExpression="description" />
-                                <asp:BoundField DataField="photo" HeaderText="photo" SortExpression="photo" />
-                                <asp:BoundField DataField="current_stock" HeaderText="current_stock" SortExpression="current_stock" />
+                                <asp:TemplateField>
+                                    <ItemTemplate>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-10">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("name") %>' Font-Bold="True" Font-Size="X-Large"></asp:Label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+
+                                                            Brand<asp:Label ID="Label2" runat="server" Font-Bold="True" Text='<%# Eval("brand") %>'></asp:Label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+
+                                                            Price<asp:Label ID="Label3" runat="server" Font-Bold="True" Text='<%# Eval("brand") %>'></asp:Label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+
+                                                            Stock<asp:Label ID="Label4" runat="server" Font-Bold="True" Text='<%# Eval("current_stock") %>'></asp:Label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+
+                                                            Description
+
+                                                            <asp:Label ID="Label5" runat="server" Font-Bold="True" Text='<%# Eval("description") %>'></asp:Label>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <asp:Image ID="Image1" class="img-fluid" runat="server" ImageUrl='<%# Eval("photo") %>' />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ItemTemplate>
+                                </asp:TemplateField>
                             </Columns>
                          </asp:GridView>
                      </div>
@@ -64,6 +110,10 @@
             </div>
          </div>
       </div>
-   </div>
+   
+        </div>
+        
+    
+    </div>
 
 </asp:Content>

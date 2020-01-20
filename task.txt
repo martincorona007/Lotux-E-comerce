@@ -2,7 +2,6 @@ Front-end
     page_delete_product_admin
     
     
-    page_management_admin
 
     
     page_pay_products
@@ -20,6 +19,8 @@ Front-end
       page_singup_user_2
       page_direction_product
       page_successful_product
+      page_management_admin
+
 
 Back-end
     page_delete_product_admin
