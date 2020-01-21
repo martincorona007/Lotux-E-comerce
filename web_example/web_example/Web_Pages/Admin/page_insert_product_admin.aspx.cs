@@ -28,7 +28,7 @@ namespace web_example.Web_Pages.Admin
                 //Se manda a llamar la clase classpageRegistrationUserClient para mandar a los metodos
                 //correspondientes para registar el usuario y almacenar en los Getters y Setters 
                 //los datos obtenidos por el usuario.
-                cls_operations_admin obj = new cls_operations_admin(0,0,"","",0,"","",0);
+                cls_operations_admin obj = new cls_operations_admin(0,0,0,"","",0,"","",0);
 
                 obj.Fk_id_admin = Int32.Parse(Session["Ides"].ToString());
                 obj.Fk_id_cat = Int32.Parse(DDL_category.SelectedValue);

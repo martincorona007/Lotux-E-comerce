@@ -1,5 +1,5 @@
 Front-end
-    page_delete_product_admin
+    
     
     
 
@@ -20,13 +20,14 @@ Front-end
       page_direction_product
       page_successful_product
       page_management_admin
+      page_delete_product_admin
 
 
 Back-end
     page_delete_product_admin
     page_profile_admin
-    page_update_product_admin
-    page_management_admin
+    
+    
 
     Check the Algorithm created who check duplicates acconts before singup 
     page_singup_admin
@@ -46,4 +47,5 @@ Back-end
     page_home
   Done
       page_insert_product_admin
-
+      page_update_product_admin
+      page_management_admin

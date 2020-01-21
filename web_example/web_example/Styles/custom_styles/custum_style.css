@@ -60,7 +60,8 @@
     margin-right: 30px;
 }
 #ContentPlaceHolder1_Image2 {
-    width: 100px;
+    width: 150px;
+    text-align: center;
 }
 /*=============page_singup_admin.aspx=============*/
 #ContentPlaceHolder1_psa{
@@ -88,6 +89,10 @@
 }
 #wi-xperia-a{
     padding-bottom: 25px;
+}
+#wi-xperia-b {
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 /**************************************************          ************************************************** 
 ***************************************************  User    **************************************************
