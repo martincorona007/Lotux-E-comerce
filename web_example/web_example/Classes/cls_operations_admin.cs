@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls;
-
+using System.Web.UI;
 namespace web_example.Classes
 {
     public class cls_operations_admin:cls_conection
@@ -107,12 +107,43 @@ namespace web_example.Classes
 
             } */
         }
-        /*public cls_operations_admin Select(string fName)
+        public bool find_ID(string name)
         {
-            var con = ConfigurationManager.ConnectionStrings["Yourconnection"].ToString();
+            //var con = ConfigurationManager.ConnectionStrings["db_exampleConnectionString1"].ToString();
+            cls_conection obj1 = new cls_conection();
+            cls_operations_admin matchingPerson = new cls_operations_admin();
+            using (SqlConnection myConnection = new SqlConnection(obj1.getConnection()))
+            {
+                string oString = "Select name,brand,price,description,photo,current_stock from Products where ID_prod=@fName";
+                SqlCommand oCmd = new SqlCommand(oString, myConnection);
+                oCmd.Parameters.AddWithValue("@fname", name);
+                myConnection.Open();
+                using (SqlDataReader oReader = oCmd.ExecuteReader())
+                {
+                    while (oReader.Read())
+                    {
+                        //I got problem getting the PRIMARY KEY and the FOREIGN KEY 
+                        //matchingPerson.Fk_id_cat = Int32.Parse(oReader["ID_prod"].ToString());
 
-            Person matchingPerson = new Person();
-            using (SqlConnection myConnection = new SqlConnection(con))
+                        matchingPerson.Name = oReader["name"].ToString();
+                        matchingPerson.Brand = oReader["brand"].ToString();
+                        matchingPerson.Price = float.Parse(oReader["price"].ToString());
+                        matchingPerson.Description = oReader["description"].ToString();
+                        matchingPerson.Photo = oReader["photo"].ToString();
+                        matchingPerson.Current_stock = Int32.Parse(oReader["current_stock"].ToString());
+                        return true;
+                    }
+
+                    myConnection.Close();
+                }
+            }
+            return false;
+        }
+        public cls_operations_admin Select(string fName)
+        {
+            cls_conection obj1 = new cls_conection();
+            cls_operations_admin matchingPerson = new cls_operations_admin();
+            using (SqlConnection myConnection = new SqlConnection(obj1.getConnection()))
             {
                 string oString = "Select name,brand,price,description,photo,current_stock from Products where ID_prod=@fName";
                 SqlCommand oCmd = new SqlCommand(oString, myConnection);
@@ -122,14 +153,48 @@ namespace web_example.Classes
                 {
                     while (oReader.Read())
                     {
-                        matchingPerson.firstName = oReader["FirstName"].ToString();
-                        matchingPerson.lastName = oReader["LastName"].ToString();
+                        //I got problem getting the PRIMARY KEY and the FOREIGN KEY 
+                        //matchingPerson.Fk_id_cat = Int32.Parse(oReader["ID_prod"].ToString());
+
+                        matchingPerson.Name = oReader["name"].ToString();
+                        matchingPerson.Brand = oReader["brand"].ToString();
+                        matchingPerson.Price = float.Parse(oReader["price"].ToString());
+                        matchingPerson.Description = oReader["description"].ToString();
+                        matchingPerson.Photo = oReader["photo"].ToString();
+                        matchingPerson.Current_stock = Int32.Parse(oReader["current_stock"].ToString());
                     }
 
                     myConnection.Close();
                 }
             }
             return matchingPerson;
-        }*/
+        }
+        public bool Delete(string id)
+        {
+            try
+            {
+                cls_conection obj1 = new cls_conection();
+                SqlConnection myConnection = new SqlConnection(obj1.getConnection());
+                myConnection.Open();
+                if (myConnection.State == ConnectionState.Closed)
+                {
+                    myConnection.Open();
+                }
+
+                SqlCommand oCmd = new SqlCommand("DELETE FROM Products WHERE ID_prod=@fkame", myConnection);
+                oCmd.Parameters.AddWithValue("@fkame", id);
+                oCmd.ExecuteNonQuery();
+
+                myConnection.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                msg = ex.ToString();
+                return false;
+                
+            }
+        }
+   
     }
 }

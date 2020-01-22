@@ -10,7 +10,7 @@ namespace web_example.Web_Pages.Admin
 {
     public partial class page_insert_product_admin : System.Web.UI.Page
     {
-        int kip;
+        bool status;
         protected void Page_Load(object sender, EventArgs e)
         {
             //kip = Int32.Parse(Request.QueryString["idk"]);
@@ -25,9 +25,8 @@ namespace web_example.Web_Pages.Admin
         {
             try
             {
-                //Se manda a llamar la clase classpageRegistrationUserClient para mandar a los metodos
-                //correspondientes para registar el usuario y almacenar en los Getters y Setters 
-                //los datos obtenidos por el usuario.
+
+
                 cls_operations_admin obj = new cls_operations_admin(0,0,0,"","",0,"","",0);
 
                 obj.Fk_id_admin = Int32.Parse(Session["Ides"].ToString());
@@ -38,21 +37,23 @@ namespace web_example.Web_Pages.Admin
                 obj.Description = txt_description.Text;
                 obj.Photo = img_upload(FileUpload);
                 obj.Current_stock = Int32.Parse(txt_current_stock.Text);
+
+                if (status == true)//check if the picture fulfill all the requirements in the algorithm
+                {
+                    
+                    obj.Add();
+
+                    lbl_success.Text = "Product successfully added";
+
+                    txt_name.Text = "";
+                    txt_brand.Text = "";
+                    txt_price.Text = "";
+                    txt_description.Text = "";
+                    DDL_category.SelectedValue = "0";
+                    txt_current_stock.Text = "";
+                    status = false;
+                }
                 
-                obj.Add();
-
-                lbl_success.Text = "Product successfully added";
-                    //Mostrara un mensaje en caso de ser exitoso la operación
-                    ///Response.Write("Successful");
-                //Se redirecciona al login 
-                //Response.Redirect("~/Web_Pages/Admin/page_singup_admin_1.aspx?");
-
-                txt_name.Text = "";
-                txt_brand.Text = "";
-                txt_price.Text = "";
-                txt_description.Text = "";
-                DDL_category.SelectedValue = "0";
-                txt_current_stock.Text = "";
             }
             catch(Exception ex)
             {
@@ -85,14 +86,15 @@ namespace web_example.Web_Pages.Admin
                         s = "~/Styles/Upload_pictures/" + x.ToString() + FileUpload1.FileName;
                         // Upload the file
                         FileUpload1.SaveAs(Server.MapPath(s));
-                       // lbl_verification.Text = "File uploaded successfully";
-                       
+                        // lbl_verification.Text = "File uploaded successfully";
+                        lbl_verification.Text = "";
+                        status = true;
                     }
-                     }
+                }
                 else
                 {
                     lbl_verification.Text = "Only files with .png and .jpg extension are allowed";
-
+                    status = false;
                 }
             }
             else

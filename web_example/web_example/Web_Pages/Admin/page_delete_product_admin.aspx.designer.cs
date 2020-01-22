@@ -24,6 +24,24 @@ namespace web_example.Web_Pages.Admin
         protected global::System.Web.UI.WebControls.Image Image2;
 
         /// <summary>
+        /// lbl_success control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_success;
+
+        /// <summary>
+        /// lblstatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblstatus;
+
+        /// <summary>
         /// btn_come_back control.
         /// </summary>
         /// <remarks>
@@ -42,13 +60,13 @@ namespace web_example.Web_Pages.Admin
         protected global::System.Web.UI.WebControls.TextBox txt_ID;
 
         /// <summary>
-        /// LinkButton4 control.
+        /// btn_delete control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        protected global::System.Web.UI.WebControls.LinkButton btn_delete;
 
         /// <summary>
         /// SqlDataSource1 control.

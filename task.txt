@@ -24,7 +24,7 @@ Front-end
 
 
 Back-end
-    page_delete_product_admin
+    
     page_profile_admin
     
     
@@ -46,6 +46,7 @@ Back-end
 
     page_home
   Done
+      page_delete_product_admin
       page_insert_product_admin
       page_update_product_admin
       page_management_admin

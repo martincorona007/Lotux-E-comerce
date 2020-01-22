@@ -9,18 +9,15 @@
                    <h1>Product Details</h1>
                    <div class="pick">
                             <asp:Image ID="Picture" runat="server"  src="../../Styles/Pictures/update.png" ></asp:Image>
-                     </div>
+                   </div>
                </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-md-12">
                     <div class="pick">
                            <asp:Label ID="lbl_success" runat="server" Font-Bold="True" ForeColor="Lime"></asp:Label>
                     </div>
-                </div>
-                <div class="col-md-2">
-
                 </div>
             </div>
         </div>

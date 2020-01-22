@@ -21,9 +21,8 @@ namespace web_example.Web_Pages.Admin
         protected void LINK_BUTTUN_ID_Click(object sender, EventArgs e)
         {
             cls_operations_admin obj2 = new cls_operations_admin(0,0,0,"","",0,"","",0);
-
-            cls_conection obj1 = new cls_conection();
-            if (obj1.find_ID(txt_ID.Text))
+            cls_operations_admin obj1 = new cls_operations_admin();
+            if (obj2.find_ID(txt_ID.Text))
             {
                 obj2 = obj1.Select(txt_ID.Text);
                 txt_name.Text = obj2.Name;
@@ -35,6 +34,8 @@ namespace web_example.Web_Pages.Admin
                 txt_current_stock.Text = obj2.Current_stock.ToString();
                 global_filepath = obj2.Photo;
                 lblstatus.Text = "";
+              //  lbl_success.Text = "Product Updated Successfully " + global_filepath + "< ";
+
             }
             else
             {
@@ -46,13 +47,18 @@ namespace web_example.Web_Pages.Admin
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            cls_conection obj1 = new cls_conection();
            
             try
             {
+                cls_operations_admin obj1 = new cls_operations_admin();
                 cls_operations_admin obj2 = new cls_operations_admin(0, 0, 0, "", "", 0, "", "", 0);
-                obj2.ID = Int32.Parse(txt_ID.Text);
-                obj2.Name = txt_name.Text.Trim();
+                obj1 = obj2.Select(txt_ID.Text);
+                global_filepath = obj1.Photo;
+
+
+                  obj2.ID = Int32.Parse(txt_ID.Text);
+
+                 obj2.Name = txt_name.Text.Trim();
                 obj2.Brand = txt_brand.Text.Trim();
                 obj2.Price= float.Parse(txt_price.Text);
                 obj2.Description = txt_description.Text.Trim();
@@ -66,24 +72,33 @@ namespace web_example.Web_Pages.Admin
                 {
                     Response.Write("<script>alert('nope');</script>");
                 }*/
-                if (obj2.Updatek())
-                {
+                //lbl_success.Text = "Product Updated Successfully " + global_filepath+"< ";
 
-                    lbl_success.Text = "Product Updated Successfully";
-                   // Response.Write("<script>alert('success');</script>");
-                    txt_ID.Text = "";
-                    txt_name.Text = "";
-                    txt_brand.Text = "";
-                    txt_price.Text = "";
-                    txt_description.Text = "";
-                    DDL_category.SelectedValue = "0";
-                    txt_current_stock.Text = "";
-                    
-                }
-                else
+                if (status == true)//check if the picture fulfill all the requirements in the algorithm
                 {
-                    lbl_verification.Text= obj2.msg;
+                    
+                    if (obj2.Updatek())
+                    {
+
+                        lbl_success.Text = "Product Updated Successfully ";
+                       // Response.Write("<script>alert('success');</script>");
+                        txt_ID.Text = "";
+                        txt_name.Text = "";
+                        txt_brand.Text = "";
+                        txt_price.Text = "";
+                        txt_description.Text = "";
+                        DDL_category.SelectedValue = "0";
+                        txt_current_stock.Text = "";
+                       // DeleteFileFromFolder(global_filepath);
+                        status = false;
+                        DeleteFileFromFolder(global_filepath);
+                    }
+                    else
+                    {
+                        lbl_verification.Text = obj2.msg;
+                    }
                 }
+
             }
             catch(Exception ex)
             {
@@ -121,13 +136,15 @@ namespace web_example.Web_Pages.Admin
                         FileUpload1.SaveAs(Server.MapPath(s));
                         // lbl_verification.Text = "File uploaded successfully";
                         //
+                        lbl_verification.Text = "";
+                        status = true;
                         
                     }
                 }
                 else
                 {
                     lbl_verification.Text = "Only files with .png and .jpg extension are allowed";
-
+                    status = false;
                 }
             }
             else
@@ -139,16 +156,13 @@ namespace web_example.Web_Pages.Admin
             return s;
 
         }
-        public void delete_Photo()
+        public void DeleteFileFromFolder(string filepath)
         {
-            if (status == true)
-            {
-                string path = Server.MapPath(global_filepath);
+                string path = Server.MapPath(filepath);
                 FileInfo file = new FileInfo(path);
                 file.Delete();
-                status = false;
-            }
-
+            
+            
 
         }
     }

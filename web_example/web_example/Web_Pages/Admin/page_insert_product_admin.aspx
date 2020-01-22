@@ -16,7 +16,15 @@
         </div>
         <div class="container">
             <div class="row">
-                <asp:Label ID="lbl_success" runat="server" Font-Bold="True" ForeColor="Green" Text=""></asp:Label>
+                <div class="col-md-12">
+                    <div class="pick">
+                        <asp:Label ID="lbl_success" runat="server" Font-Bold="True" ForeColor="Green" Text=""></asp:Label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                       <div class="col-md-4">
                          <label>Picture</label>
                          <div class="form-group">

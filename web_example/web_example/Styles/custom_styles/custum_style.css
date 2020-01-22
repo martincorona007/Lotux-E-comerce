@@ -34,6 +34,9 @@
 .pick {
     text-align: center;
 }
+#ContentPlaceHolder1_lbl_success {
+    font-size: 25px;
+}
 .alinear { /*align button only for this page*/
     text-align: right;
     padding-top: 15px;

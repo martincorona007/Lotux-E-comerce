@@ -27,6 +27,25 @@
                         <hr>
                      </div>
                   </div>
+                   <div class="container">
+                        <div class="row">
+                                <div class="col-md-12">
+                                    <div class="pick">
+                                           <asp:Label ID="lbl_success" runat="server" Font-Bold="True" ForeColor="Lime"></asp:Label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-md-12">
+                               <div class="pick">
+                                     <asp:Label ID="lblstatus" runat="server" Text="" Font-Bold="True" ForeColor="Red"></asp:Label>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
                    <div id="wi-xperia-b">
                        <div class="row">
 
@@ -37,7 +56,7 @@
                                <asp:TextBox CssClass="form-control" ID="txt_ID" runat="server" placeholder="Enter ID"></asp:TextBox>
                             </div>
                             <div class="col-4">
-                                   <asp:LinkButton class="btn btn-lg btn-block btn-danger" ID="LinkButton4" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                                   <asp:LinkButton class="btn btn-lg btn-block btn-danger" ID="btn_delete" runat="server" OnClick="btn_delete_Click"><i class="fas fa-check-circle"></i></asp:LinkButton>
                             </div>   
                          </div>
                    </div>
