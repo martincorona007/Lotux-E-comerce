@@ -126,7 +126,7 @@
 
                         </div>
                         <div class="col-md-4">
-                            <asp:Button ID="btn_come_back" class="btn btn-lg btn-block btn-warning" runat="server" Text="Back to management" />
+                            <asp:Button ID="btn_come_back" class="btn btn-lg btn-block btn-warning" runat="server" Text="Back to management" OnClick="btn_come_back_Click" />
                          </div>
                      
                          <div class="col-md-4">

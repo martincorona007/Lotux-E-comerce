@@ -165,5 +165,10 @@ namespace web_example.Web_Pages.Admin
             
 
         }
+
+        protected void btn_come_back_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Web_Pages/Admin/page_management_admin.aspx");
+        }
     }
 }

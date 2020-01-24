@@ -24,6 +24,15 @@ namespace web_example.Web_Pages
         protected global::System.Web.UI.WebControls.Image pro1;
 
         /// <summary>
+        /// lbl_success control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_success;
+
+        /// <summary>
         /// lbl_first_name control.
         /// </summary>
         /// <remarks>
@@ -40,15 +49,6 @@ namespace web_example.Web_Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_first_name;
-
-        /// <summary>
-        /// RFV_first_name control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_first_name;
 
         /// <summary>
         /// lbl_last_name control.
@@ -69,15 +69,6 @@ namespace web_example.Web_Pages
         protected global::System.Web.UI.WebControls.TextBox txt_last_name;
 
         /// <summary>
-        /// RFV_last_name control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_last_name;
-
-        /// <summary>
         /// lbl_country control.
         /// </summary>
         /// <remarks>
@@ -96,15 +87,6 @@ namespace web_example.Web_Pages
         protected global::System.Web.UI.WebControls.DropDownList DDL_country;
 
         /// <summary>
-        /// RFV_country control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_country;
-
-        /// <summary>
         /// lbl_city control.
         /// </summary>
         /// <remarks>
@@ -121,15 +103,6 @@ namespace web_example.Web_Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_city;
-
-        /// <summary>
-        /// RFV_city control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_city;
 
         /// <summary>
         /// lbl_cell_phone control.
@@ -159,24 +132,6 @@ namespace web_example.Web_Pages
         protected global::System.Web.UI.WebControls.TextBox txt_cell_phone;
 
         /// <summary>
-        /// RFV_cell_phone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_cell_phone;
-
-        /// <summary>
-        /// RegularExpressionValidator2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
-
-        /// <summary>
         /// lbl_zip_code control.
         /// </summary>
         /// <remarks>
@@ -193,15 +148,6 @@ namespace web_example.Web_Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txt_zipcode;
-
-        /// <summary>
-        /// RFV_zipcode control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_zipcode;
 
         /// <summary>
         /// lbl_address control.
@@ -222,21 +168,12 @@ namespace web_example.Web_Pages
         protected global::System.Web.UI.WebControls.TextBox txt_address;
 
         /// <summary>
-        /// RFV_address control.
+        /// btn_update control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFV_address;
-
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btn_update;
     }
 }

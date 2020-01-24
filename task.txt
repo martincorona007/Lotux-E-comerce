@@ -26,7 +26,7 @@ Front-end
 Back-end
     
     page_profile_admin
-    
+    page_profile_user
     
 
     Check the Algorithm created who check duplicates acconts before singup 

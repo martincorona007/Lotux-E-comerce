@@ -6,8 +6,8 @@
     <header>
         <div class="section-title">
             <h1>Sing Up</h1>
-            <div id="pick">
-                <asp:Image ID="pro1" runat="server" ImageUrl="~/Styles/Pictures/p3.PNG" />
+            <div class="pick">
+                <asp:Image ID="psa" runat="server" ImageUrl="~/Styles/Pictures/p3.PNG" />
             </div>
         </div>
     </header>

@@ -18,7 +18,7 @@ namespace web_example.Web_Pages.Admin
 
         protected void btn_come_back_Click(object sender, EventArgs e)
         {
-            Response.Redirect("page_management_admin.aspx");
+            Response.Redirect("~/Web_Pages/Admin/page_management_admin.aspx");
         }
 
         protected void btn_add_Click(object sender, EventArgs e)

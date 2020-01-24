@@ -20,253 +20,250 @@
                                    <div class="form-group col-sm">
                                     <asp:Label ID="lbl_first_name" runat="server" Text="First Name"></asp:Label>
                                     <asp:TextBox ID="txt_first_name" class="form-control" placeholder="Enter First name" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RFV_first_name" runat="server" ControlToValidate="txt_first_name" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                               </div>
+                                  </div>
                                <div class="form-group col-sm">
                                    <asp:Label ID="lbl_last_name" runat="server" Text="Last Name"></asp:Label>
                                    <asp:TextBox ID="txt_last_name" class="form-control" placeholder="Enter Last name" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RFV_last_name" runat="server" ControlToValidate="txt_last_name" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                              
+                                  
                                </div>
                                <div class="form-group col-sm">
                                             <asp:Label ID="lbl_country" runat="server" Text="Contry"></asp:Label>
                                        <asp:DropDownList ID="DDL_country" class="form-control"  runat="server" AutoPostBack="True" OnSelectedIndexChanged="SelectedIndex_Changed" DataTextField="countryName"  DataValueField="countryName">
                                            <asp:ListItem Value="0">Select</asp:ListItem>
-                                                    <asp:ListItem  >Afghanistan</asp:ListItem>
-                                                    <asp:ListItem>Albania</asp:ListItem>
-                                                    <asp:ListItem>Armenia</asp:ListItem>
-                                                    <asp:ListItem>Andorra</asp:ListItem>
-                                                    <asp:ListItem>Angola</asp:ListItem>
-                                                    <asp:ListItem>Anguila</asp:ListItem>
-                                                    <asp:ListItem>Antigua</asp:ListItem>
-                                                    <asp:ListItem>Arabia Saudí</asp:ListItem>
-                                                    <asp:ListItem>Argeria</asp:ListItem>
-                                                    <asp:ListItem>Argentina</asp:ListItem>
-                                                    <asp:ListItem>Armenia</asp:ListItem>
-                                                    <asp:ListItem>Aruba</asp:ListItem>
-                                                    <asp:ListItem>Australia</asp:ListItem>
-                                                    <asp:ListItem>Austria</asp:ListItem>
-                                                    <asp:ListItem>Azerbaijan</asp:ListItem>
-                                                    <asp:ListItem>Bahamas</asp:ListItem>
-                                                    <asp:ListItem>Bangladesh</asp:ListItem>
-                                                    <asp:ListItem>Barbados</asp:ListItem>
-                                                    <asp:ListItem>Belarus</asp:ListItem>
-                                                    <asp:ListItem>Belgium</asp:ListItem>
-                                                    <asp:ListItem>Belize</asp:ListItem>
-                                                    <asp:ListItem>Benin</asp:ListItem>
-                                                    <asp:ListItem>Bermuda</asp:ListItem>
-                                                    <asp:ListItem>Bhutan</asp:ListItem>
-                                                    <asp:ListItem>Bolivia</asp:ListItem>
-                                                    <asp:ListItem>Bosnia & Herzegovia</asp:ListItem>
-                                                    <asp:ListItem>Botswana</asp:ListItem>
-                                                    <asp:ListItem>Brazil</asp:ListItem>
-                                                    <asp:ListItem>British Indian Ocean Territory</asp:ListItem>
-                                                    <asp:ListItem>British Virgin Islands</asp:ListItem>
-                                                    <asp:ListItem>Brunei</asp:ListItem>
-                                                    <asp:ListItem>Bulgaria</asp:ListItem>
-                                                    <asp:ListItem>Burkina Faso</asp:ListItem>
-                                                    <asp:ListItem>Burundi</asp:ListItem>
-                                                    <asp:ListItem>Cambodia</asp:ListItem>
-                                                    <asp:ListItem>Cameroon</asp:ListItem>
-                                                    <asp:ListItem>Canada</asp:ListItem>
-                                                    <asp:ListItem>Cape Verde</asp:ListItem>
-                                                    <asp:ListItem>Caribbean Netherlands</asp:ListItem>
-                                                    <asp:ListItem>Cayman Islands</asp:ListItem>
-                                                    <asp:ListItem>Central African Republic</asp:ListItem>
-                                                    <asp:ListItem>Chad</asp:ListItem>
-                                                    <asp:ListItem>Chile</asp:ListItem>
-                                                    <asp:ListItem>China</asp:ListItem>
-                                                    <asp:ListItem>Colombia</asp:ListItem>
-                                                    <asp:ListItem>Comoros</asp:ListItem>
-                                                    <asp:ListItem>Congo - Brazzaville</asp:ListItem>
-                                                    <asp:ListItem>Congo - Kinshasa</asp:ListItem>
-                                                    <asp:ListItem>Cook Islands</asp:ListItem>
-                                                    <asp:ListItem>Costa Rica</asp:ListItem>
-                                                    <asp:ListItem>Cote d'Ivoire</asp:ListItem>
-                                                    <asp:ListItem>Croatia</asp:ListItem>
-                                                    <asp:ListItem>Cuba</asp:ListItem>
-                                                    <asp:ListItem>Curacao</asp:ListItem>
-                                                    <asp:ListItem>Cyprus</asp:ListItem>
-                                                    <asp:ListItem>Czechia</asp:ListItem>
-                                                    <asp:ListItem>Denmark</asp:ListItem>
-                                                    <asp:ListItem>Djibouti</asp:ListItem>
-                                                    <asp:ListItem>Dominica</asp:ListItem>
-                                                    <asp:ListItem>Dominican Republic</asp:ListItem>
-                                                    <asp:ListItem>Ecuador</asp:ListItem>
-                                                    <asp:ListItem>Egypt</asp:ListItem>
-                                                    <asp:ListItem>El Salvador</asp:ListItem>
-                                                    <asp:ListItem>Equatorial Guinea</asp:ListItem>
-                                                    <asp:ListItem>Eritrea</asp:ListItem>
-                                                    <asp:ListItem>Estonia</asp:ListItem>
-                                                    <asp:ListItem>Falkland Islands (Islas Malvinas)</asp:ListItem>
-                                                    <asp:ListItem>Faroe Islands</asp:ListItem>
-                                                    <asp:ListItem>Fiji</asp:ListItem>
-                                                    <asp:ListItem>Finland</asp:ListItem>
-                                                    <asp:ListItem>France</asp:ListItem>
-                                                    <asp:ListItem>French Guiana</asp:ListItem>
-                                                    <asp:ListItem>French Polynesia</asp:ListItem>
-                                                    <asp:ListItem>Gabon</asp:ListItem>
-                                                    <asp:ListItem>Gambia</asp:ListItem>
-                                                    <asp:ListItem>Georgia</asp:ListItem>
-                                                    <asp:ListItem>Germany</asp:ListItem>
-                                                    <asp:ListItem>Ghana</asp:ListItem>
-                                                    <asp:ListItem>Gibraltar</asp:ListItem>
-                                                    <asp:ListItem>Greece</asp:ListItem>
-                                                    <asp:ListItem>Greenland</asp:ListItem>
-                                                    <asp:ListItem>Grenada</asp:ListItem>
-                                                    <asp:ListItem>Guadeloupe</asp:ListItem>
-                                                    <asp:ListItem>Guam</asp:ListItem>
-                                                    <asp:ListItem>Guatemala</asp:ListItem>
-                                                    <asp:ListItem>Guinea</asp:ListItem>
-                                                    <asp:ListItem>Guinea-Bissau</asp:ListItem>
-                                                    <asp:ListItem>Guyana</asp:ListItem>
-                                                    <asp:ListItem>Haiti</asp:ListItem>
-                                                    <asp:ListItem>Honduras</asp:ListItem>
-                                                    <asp:ListItem>Hong Kong</asp:ListItem>
-                                                    <asp:ListItem>Hungary</asp:ListItem>
-                                                    <asp:ListItem>Iceland</asp:ListItem>
-                                                    <asp:ListItem>India</asp:ListItem>
-                                                    <asp:ListItem>indonesia</asp:ListItem>
-                                                    <asp:ListItem>Iran</asp:ListItem>
-                                                    <asp:ListItem>Iraq</asp:ListItem>
-                                                    <asp:ListItem>Ireland</asp:ListItem>
-                                                    <asp:ListItem>Israel</asp:ListItem>
-                                                    <asp:ListItem>Italy</asp:ListItem>
-                                                    <asp:ListItem>Jamaica</asp:ListItem>
-                                                    <asp:ListItem>Japan</asp:ListItem>
-                                                    <asp:ListItem>Jordan</asp:ListItem>
-                                                    <asp:ListItem>Kazakhstan</asp:ListItem>
-                                                    <asp:ListItem>Kenya</asp:ListItem>
-                                                    <asp:ListItem>Kiribati</asp:ListItem>
-                                                    <asp:ListItem>Kosovo</asp:ListItem>
-                                                    <asp:ListItem>Kuwait</asp:ListItem>
-                                                    <asp:ListItem>Kyrgyzstan</asp:ListItem>
-                                                    <asp:ListItem>Laos</asp:ListItem>
-                                                    <asp:ListItem>Latvia</asp:ListItem>
-                                                    <asp:ListItem>Lebanon</asp:ListItem>
-                                                    <asp:ListItem>Lesotho</asp:ListItem>
-                                                    <asp:ListItem>Liberia</asp:ListItem>
-                                                    <asp:ListItem>Libya</asp:ListItem>
-                                                    <asp:ListItem>Liechtenstein</asp:ListItem>
-                                                    <asp:ListItem>Lithuania</asp:ListItem>
-                                                    <asp:ListItem>Luxembourg</asp:ListItem>
-                                                    <asp:ListItem>Macau</asp:ListItem>
-                                                    <asp:ListItem>Mecedonia (FYROM)</asp:ListItem>
-                                                    <asp:ListItem>Madagascar</asp:ListItem>
-                                                    <asp:ListItem>Malawi</asp:ListItem>
-                                                    <asp:ListItem>Maldives</asp:ListItem>
-                                                    <asp:ListItem>Mali</asp:ListItem>
-                                                    <asp:ListItem>Malta</asp:ListItem>
-                                                    <asp:ListItem>Marshall Islands</asp:ListItem>
-                                                    <asp:ListItem>Martinique</asp:ListItem>
-                                                    <asp:ListItem>Mauritania</asp:ListItem>
-                                                    <asp:ListItem>Mauritius</asp:ListItem>
-                                                    <asp:ListItem>Mexico</asp:ListItem>
-                                                    <asp:ListItem>Micronesia</asp:ListItem>
-                                                    <asp:ListItem>Moldova</asp:ListItem>
-                                                    <asp:ListItem>Monaco</asp:ListItem>
-                                                    <asp:ListItem>Mongolia</asp:ListItem>
-                                                    <asp:ListItem>Montenegro</asp:ListItem>
-                                                    <asp:ListItem>Montserrat</asp:ListItem>
-                                                    <asp:ListItem>Morocco</asp:ListItem>
-                                                    <asp:ListItem>Mozambique</asp:ListItem>
-                                                    <asp:ListItem>Myanmar (Burma)</asp:ListItem>
-                                                    <asp:ListItem>Namibia</asp:ListItem>
-                                                    <asp:ListItem>Nauru</asp:ListItem>
-                                                    <asp:ListItem>Nepal</asp:ListItem>
-                                                    <asp:ListItem>Netherlands</asp:ListItem>
-                                                    <asp:ListItem>New Caledonia</asp:ListItem>
-                                                    <asp:ListItem>New Zealand</asp:ListItem>
-                                                    <asp:ListItem>Nicaragua</asp:ListItem>
-                                                    <asp:ListItem>Niger</asp:ListItem>
-                                                    <asp:ListItem>Nigeria</asp:ListItem>
-                                                    <asp:ListItem>Niue</asp:ListItem>
-                                                    <asp:ListItem>Norfolk Island</asp:ListItem>
-                                                    <asp:ListItem>North Korea</asp:ListItem>
-                                                    <asp:ListItem>Northern Mariana Islands</asp:ListItem>
-                                                    <asp:ListItem>Norway</asp:ListItem>
-                                                    <asp:ListItem>Oman</asp:ListItem>
-                                                    <asp:ListItem>Pakistan</asp:ListItem>
-                                                    <asp:ListItem>Palau</asp:ListItem>
-                                                    <asp:ListItem>Palestine</asp:ListItem>
-                                                    <asp:ListItem>Panama</asp:ListItem>
-                                                    <asp:ListItem>Papua New Guinea</asp:ListItem>
-                                                    <asp:ListItem>Paraguay</asp:ListItem>
-                                                    <asp:ListItem>Peru</asp:ListItem>
-                                                    <asp:ListItem>Philippines</asp:ListItem>
-                                                    <asp:ListItem>Poland</asp:ListItem>
-                                                    <asp:ListItem>Puerto Rico</asp:ListItem>
-                                                    <asp:ListItem>Qatar</asp:ListItem>
-                                                    <asp:ListItem>Réunion</asp:ListItem>
-                                                    <asp:ListItem>Romania</asp:ListItem>
-                                                    <asp:ListItem>Russia</asp:ListItem>
-                                                    <asp:ListItem>Rwanda</asp:ListItem>
-                                                    <asp:ListItem>Samoa</asp:ListItem>
-                                                    <asp:ListItem>San Marino</asp:ListItem>
-                                                    <asp:ListItem>Sao Tomé & Príncipe</asp:ListItem>
-                                                    <asp:ListItem>Saudi Arabia</asp:ListItem>
-                                                    <asp:ListItem>Senegal</asp:ListItem>
-                                                    <asp:ListItem>Serbia</asp:ListItem>
-                                                    <asp:ListItem>Seychelles</asp:ListItem>
-                                                    <asp:ListItem>Sierra Leone</asp:ListItem>
-                                                    <asp:ListItem>Singapore</asp:ListItem>
-                                                    <asp:ListItem>Sint Maarten</asp:ListItem>
-                                                    <asp:ListItem>Slovakia</asp:ListItem>
-                                                    <asp:ListItem>Slovenia</asp:ListItem>
-                                                    <asp:ListItem>Solomon Islands</asp:ListItem>
-                                                    <asp:ListItem>Somalia</asp:ListItem>
-                                                    <asp:ListItem>South Africa</asp:ListItem>
-                                                    <asp:ListItem>South Korea</asp:ListItem>
-                                                    <asp:ListItem>South Sudan</asp:ListItem>
-                                                    <asp:ListItem>Spain</asp:ListItem>
-                                                    <asp:ListItem>Sri Lanka</asp:ListItem>
-                                                    <asp:ListItem>St. Barthélemy</asp:ListItem>
-                                                    <asp:ListItem>St. Helena</asp:ListItem>
-                                                    <asp:ListItem>St. Kitts & Nevis</asp:ListItem>
-                                                    <asp:ListItem>St. Lucia</asp:ListItem>
-                                                    <asp:ListItem>St. Martin</asp:ListItem>
-                                                    <asp:ListItem>St. Pierre & Miquelon</asp:ListItem>
-                                                    <asp:ListItem>St. Vincent & Grenadies</asp:ListItem>
-                                                    <asp:ListItem>Sudan</asp:ListItem>
-                                                    <asp:ListItem>Suriname</asp:ListItem>
-                                                    <asp:ListItem>Swaziland</asp:ListItem>
-                                                    <asp:ListItem>Sweden</asp:ListItem>
-                                                    <asp:ListItem>Switzerland</asp:ListItem>
-                                                    <asp:ListItem>Syria</asp:ListItem>
-                                                    <asp:ListItem>Taiwan</asp:ListItem>
-                                                    <asp:ListItem>Tajikistan</asp:ListItem>
-                                                    <asp:ListItem>Tanzania</asp:ListItem>
-                                                    <asp:ListItem>Thailand</asp:ListItem>
-                                                    <asp:ListItem>Timor-Leste</asp:ListItem>
-                                                    <asp:ListItem>Togo</asp:ListItem>
-                                                    <asp:ListItem>Tokelau</asp:ListItem>
-                                                    <asp:ListItem>Tonga</asp:ListItem>
-                                                    <asp:ListItem>Trinidad & Tobago</asp:ListItem>
-                                                    <asp:ListItem>Tunisia</asp:ListItem>
-                                                    <asp:ListItem>Turkey</asp:ListItem>
-                                                    <asp:ListItem>Turkmenistan</asp:ListItem>
-                                                    <asp:ListItem>Turks & Caicos Islands</asp:ListItem>
-                                                    <asp:ListItem>Tuvalu</asp:ListItem>
-                                                    <asp:ListItem>U.S. Virgin Islands</asp:ListItem>
-                                                    <asp:ListItem>Uganda</asp:ListItem>
-                                                    <asp:ListItem>Ukraine</asp:ListItem>
-                                                    <asp:ListItem>United Arab Emirates</asp:ListItem>
-                                                    <asp:ListItem>United Kingdom</asp:ListItem>
-                                                    <asp:ListItem>United States</asp:ListItem>
-                                                    <asp:ListItem>Uruguay</asp:ListItem>
-                                                    <asp:ListItem>Uzbekistan</asp:ListItem>
-                                                    <asp:ListItem>Vanuatu</asp:ListItem>
-                                                    <asp:ListItem>Vatican City</asp:ListItem>
-                                                    <asp:ListItem>Venezuela</asp:ListItem>
-                                                    <asp:ListItem>Vietnam</asp:ListItem>
-                                                    <asp:ListItem>Wallis & Futuna</asp:ListItem>
-                                                    <asp:ListItem>Yemen</asp:ListItem>
-                                                    <asp:ListItem>Zambia</asp:ListItem>
-                                                    <asp:ListItem>Zimbabwe</asp:ListItem>
+                                                    <asp:ListItem Value="Afghanistan" Text="Afghanistan"/>
+                                                    <asp:ListItem Value="Albania" Text="Albania"/>
+                                                    <asp:ListItem Value="Armenia" Text="Armenia"/>
+                                                    <asp:ListItem Value="Andorra" Text="Andorra"/>
+                                                    <asp:ListItem Value="Angola" Text="Angola"/>
+                                                    <asp:ListItem Value="Anguila" Text="Anguila"/>
+                                                    <asp:ListItem Value="Antigua" Text="Antigua"/>
+                                                    <asp:ListItem Value="Arabia Saudí" Text="Arabia Saudí"/>
+                                                    <asp:ListItem Value="Argeria" Text="Argeria" />
+                                                    <asp:ListItem Value="Argentina" Text="Argentina"/>
+                                                    <asp:ListItem Value="Armenia" Text="Armenia"/>
+                                                    <asp:ListItem Value="Aruba" Text="Aruba"/>
+                                                    <asp:ListItem Value="Australia" Text="Australia"/>
+                                                    <asp:ListItem Value="Austria" Text="Austria"/>
+                                                    <asp:ListItem Value="Azerbaijan" Text="Azerbaijan"/>
+                                                    <asp:ListItem Value="Bahamas" Text="Bahamas"/>
+                                                    <asp:ListItem Value="Bangladesh" Text="Bangladesh"/>
+                                                    <asp:ListItem Value="Barbados" Text="Barbados"/>
+                                                    <asp:ListItem Value="Belarus" Text="Belarus"/>
+                                                    <asp:ListItem Value="Belgium" Text="Belgium"/>
+                                                    <asp:ListItem Value="Belize" Text="Belize"/>
+                                                    <asp:ListItem Value="Benin" Text="Benin"/>
+                                                    <asp:ListItem Value="Bermuda" Text="Bermuda"/>
+                                                    <asp:ListItem Value="Bhutan" Text="Bhutan"/>
+                                                    <asp:ListItem Value="Bolivia" Text="Bolivia"/>
+                                                    <asp:ListItem Value="Bosnia & Herzegovia" Text="Bosnia & Herzegovia"/>
+                                                    <asp:ListItem Value="Botswana" Text="Botswana"/>
+                                                    <asp:ListItem Value="Brazil" Text="Brazil"/>
+                                                    <asp:ListItem Value="British Indian Ocean Territory" Text="British Indian Ocean Territory"/>
+                                                    <asp:ListItem Value="British Virgin Islands" Text="British Virgin Islands"/>
+                                                    <asp:ListItem Value="Brunei" Text="Brunei"/>
+                                                    <asp:ListItem Value="Bulgaria" Text="Bulgaria"/>
+                                                    <asp:ListItem Value="Burkina Faso" Text="Burkina Faso"/>
+                                                    <asp:ListItem Value="Burundi" Text="Burundi"/>
+                                                    <asp:ListItem Value="Cambodia" Text="Cambodia"/>
+                                                    <asp:ListItem Value="Cameroon" Text="Cameroon"/>
+                                                    <asp:ListItem Value="Canada" Text="Canada"/>
+                                                    <asp:ListItem Value="Cape Verde" Text="Cape Verde"/>
+                                                    <asp:ListItem Value="Caribbean Netherlands" Text="Caribbean Netherlands"/>
+                                                    <asp:ListItem Value="Cayman Islands" Text="Cayman Islands"/>
+                                                    <asp:ListItem Value="Central African Republic" Text="Central African Republic"/>
+                                                    <asp:ListItem Value="Chad" Text="Chad"/>
+                                                    <asp:ListItem Value="Chile" Text="Chile"/>
+                                                    <asp:ListItem Value="China" Text="China"/>
+                                                    <asp:ListItem Value="Colombia" Text="Colombia"/>
+                                                    <asp:ListItem Value="Comoros" Text="Comoros"/>
+                                                    <asp:ListItem Value="Congo - Brazzaville" Text="Congo - Brazzaville"/>
+                                                    <asp:ListItem Value="Congo - Kinshasa" Text="Congo - Kinshasa"/>
+                                                    <asp:ListItem Value="Cook Islands" Text="Cook Islands"/>
+                                                    <asp:ListItem Value="Costa Rica" Text="Costa Rica"/>
+                                                    <asp:ListItem Value="Cote d'Ivoire" Text="Cote d'Ivoire"/>
+                                                    <asp:ListItem Value="Croatia" Text="Croatia"/>
+                                                    <asp:ListItem Value="Cuba" Text="Cuba"/>
+                                                    <asp:ListItem Value="Curacao" Text="Curacao"/>
+                                                    <asp:ListItem Value="Cyprus" Text="Cyprus"/>
+                                                    <asp:ListItem Value="Czechia" Text="Czechia"/>
+                                                    <asp:ListItem Value="Denmark" Text="Denmark"/>
+                                                    <asp:ListItem Value="Djibouti" Text="Djibouti"/>
+                                                    <asp:ListItem Value="Dominica" Text="Dominica"/>
+                                                    <asp:ListItem Value="Dominican Republic" Text="Dominican Republic"/>
+                                                    <asp:ListItem Value="Ecuador" Text="Ecuador"/>
+                                                    <asp:ListItem Value="Egypt" Text="Egypt"/>
+                                                    <asp:ListItem Value="El Salvador" Text="El Salvador"/>
+                                                    <asp:ListItem Value="Equatorial Guinea" Text="Equatorial Guinea"/>
+                                                    <asp:ListItem Value="Eritrea" Text="Eritrea"/>
+                                                    <asp:ListItem Value="Estonia" Text="Estonia"/>
+                                                    <asp:ListItem Value="Falkland Islands (Islas Malvinas)" Text="Falkland Islands (Islas Malvinas)"/>
+                                                    <asp:ListItem Value="Faroe Islands" Text="Faroe Islands"/>
+                                                    <asp:ListItem Value="Fiji" Text="Fiji"/>
+                                                    <asp:ListItem Value="Finland" Text="Finland"/>
+                                                    <asp:ListItem Value="France" Text="France"/>
+                                                    <asp:ListItem Value="French Guiana" Text="French Guiana"/>
+                                                    <asp:ListItem Value="French PFolynesia" Text="French Polynesia"/>
+                                                    <asp:ListItem Value="Gabon" Text="Gabon"/>
+                                                    <asp:ListItem Value="Gambia" Text="Gambia"/>
+                                                    <asp:ListItem Value="Georgia" Text="Georgia"/>
+                                                    <asp:ListItem Value="Germany" Text="Germany"/>
+                                                    <asp:ListItem Value="Ghana" Text="Ghana"/>
+                                                    <asp:ListItem Value="Gibraltar" Text="Gibraltar"/>
+                                                    <asp:ListItem Value="Greece" Text="Greece"/>
+                                                    <asp:ListItem Value="Greenland" Text="Greenland"/>
+                                                    <asp:ListItem Value="Grenada" Text="Grenada"/>
+                                                    <asp:ListItem Value="Guadeloupe" Text="Guadeloupe"/>
+                                                    <asp:ListItem Value="Guam" Text="Guam"/>
+                                                    <asp:ListItem Value="Guatemala" Text="Guatemala"/>
+                                                    <asp:ListItem Value="Guinea" Text="Guinea"/>
+                                                    <asp:ListItem Value="Guinea-Bissau" Text="Guinea-Bissau"/>
+                                                    <asp:ListItem Value="Guyana" Text="Guyana"/>
+                                                    <asp:ListItem Value="Haiti" Text="Haiti"/>
+                                                    <asp:ListItem Value="Honduras" Text="Honduras"/>
+                                                    <asp:ListItem Value="Hong Kong" Text="Hong Kong"/>
+                                                    <asp:ListItem Value="Hungary" Text="Hungary"/>
+                                                    <asp:ListItem Value="Iceland" Text="Iceland"/>
+                                                    <asp:ListItem Value="India" Text="India"/>
+                                                    <asp:ListItem Value="indonesia" Text="indonesia"/>
+                                                    <asp:ListItem Value="Iran" Text="Iran"/>
+                                                    <asp:ListItem Value="Iraq" Text="Iraq"/>
+                                                    <asp:ListItem Value="Ireland" Text="Ireland"/>
+                                                    <asp:ListItem Value="Israel" Text="Israel"/>
+                                                    <asp:ListItem Value="Italy" Text="Italy"/>
+                                                    <asp:ListItem Value="Jamaica" Text="Jamaica"/>
+                                                    <asp:ListItem Value="Japan" Text="Japan"/>
+                                                    <asp:ListItem Value="Jordan" Text="Jordan"/>
+                                                    <asp:ListItem Value="Kazakhstan" Text="Kazakhstan"/>
+                                                    <asp:ListItem Value="Kenya" Text="Kenya"/>
+                                                    <asp:ListItem Value="Kiribati" Text="Kiribati"/>
+                                                    <asp:ListItem Value="Kosovo" Text="Kosovo"/>
+                                                    <asp:ListItem Value="Kuwait" Text="Kuwait"/>
+                                                    <asp:ListItem Value="Kyrgyzstan" Text="Kyrgyzstan"/>
+                                                    <asp:ListItem Value="Laos" Text="Laos"/>
+                                                    <asp:ListItem Value="Latvia" Text="Latvia"/>
+                                                    <asp:ListItem Value="Lebanon" Text="Lebanon"/>
+                                                    <asp:ListItem Value="Lesotho" Text="Lesotho"/>
+                                                    <asp:ListItem Value="Liberia" Text="Liberia"/>
+                                                    <asp:ListItem Value="Libya" Text="Libya"/>
+                                                    <asp:ListItem Value="Liechtenstein" Text="Liechtenstein"/>
+                                                    <asp:ListItem Value="Lithuania" Text="Lithuania"/>
+                                                    <asp:ListItem Value="Luxembourg" Text="Luxembourg"/>
+                                                    <asp:ListItem Value="Macau" Text="Macau"/>
+                                                    <asp:ListItem Value="Mecedonia (FYROM)" Text="Mecedonia (FYROM)"/>
+                                                    <asp:ListItem Value="Madagascar" Text="Madagascar"/>
+                                                    <asp:ListItem Value="Malawi" Text="Malawi"/>
+                                                    <asp:ListItem Value="Maldives" Text="Maldives"/>
+                                                    <asp:ListItem Value="Mali" Text="Mali"/>
+                                                    <asp:ListItem Value="Malta" Text="Malta"/>
+                                                    <asp:ListItem Value="Marshall Islands" Text="Marshall Islands"/>
+                                                    <asp:ListItem Value="Martinique" Text="Martinique"/>
+                                                    <asp:ListItem Value="Mauritania" Text="Mauritania"/>
+                                                    <asp:ListItem Value="Mauritius" Text="Mauritius"/>
+                                                    <asp:ListItem Value="Mexico" Text="Mexico"/>
+                                                    <asp:ListItem Value="Micronesia" Text="Micronesia"/>
+                                                    <asp:ListItem Value="Moldova" Text="Moldova"/>
+                                                    <asp:ListItem Value="Monaco" Text="Monaco"/>
+                                                    <asp:ListItem Value="Mongolia" Text="Mongolia"/>
+                                                    <asp:ListItem Value="Montenegro" Text="Montenegro"/>
+                                                    <asp:ListItem Value="Montserrat" Text="Montserrat"/>
+                                                    <asp:ListItem Value="Morocco" Text="Morocco"/>
+                                                    <asp:ListItem Value="Mozambique" Text="Mozambique"/>
+                                                    <asp:ListItem Value="Myanmar (Burma)" Text="Myanmar (Burma)"/>
+                                                    <asp:ListItem Value="Namibia" Text="Namibia"/>
+                                                    <asp:ListItem Value="Nauru" Text="Nauru"/>
+                                                    <asp:ListItem Value="Nepal" Text="Nepal"/>
+                                                    <asp:ListItem Value="Netherlands" Text="Netherlands"/>
+                                                    <asp:ListItem Value="New Caledonia" Text="New Caledonia"/>
+                                                    <asp:ListItem Value="New Zealand" Text="New Zealand"/>
+                                                    <asp:ListItem Value="Nicaragua" Text="Nicaragua"/>
+                                                    <asp:ListItem Value="Niger" Text="Niger"/>
+                                                    <asp:ListItem Value="Nigeria" Text="Nigeria"/>
+                                                    <asp:ListItem Value="Niue" Text="Niue"/>
+                                                    <asp:ListItem Value="Norfolk Island" Text="Norfolk Island"/>
+                                                    <asp:ListItem Value="North Korea" Text="North Korea"/>
+                                                    <asp:ListItem Value="Northern Mariana Islands" Text="Northern Mariana Islands"/>
+                                                    <asp:ListItem Value="Norway" Text="Norway"/>
+                                                    <asp:ListItem Value="Oman" Text="Oman"/>
+                                                    <asp:ListItem Value="Pakistan" Text="Pakistan"/>
+                                                    <asp:ListItem Value="Palau" Text="Palau"/>
+                                                    <asp:ListItem Value="Palestine" Text="Palestine"/>
+                                                    <asp:ListItem Value="Panama" Text="Panama"/>
+                                                    <asp:ListItem Value="Papua New Guinea" Text="Papua New Guinea"/>
+                                                    <asp:ListItem Value="Paraguay" Text="Paraguay"/>
+                                                    <asp:ListItem Value="Peru" Text="Peru"/>
+                                                    <asp:ListItem Value="Philippines" Text="Philippines"/>
+                                                    <asp:ListItem Value="Poland" Text="Poland"/>
+                                                    <asp:ListItem Value="Puerto Rico" Text="Puerto Rico"/>
+                                                    <asp:ListItem Value="Qatar" Text="Qatar"/>
+                                                    <asp:ListItem Value="Réunion" Text="Réunion"/>
+                                                    <asp:ListItem Value="Romania" Text="Romania"/>
+                                                    <asp:ListItem Value="Russia" Text="Russia"/>
+                                                    <asp:ListItem Value="Rwanda" Text="Rwanda"/>
+                                                    <asp:ListItem Value="Samoa" Text="Samoa"/>
+                                                    <asp:ListItem Value="San Marino" Text="San Marino"/>
+                                                    <asp:ListItem Value="Sao Tomé & Príncipe" Text="Sao Tomé & Príncipe"/>
+                                                    <asp:ListItem Value="Saudi Arabia" Text="Saudi Arabia"/>
+                                                    <asp:ListItem Value="Senegal" Text="Senegal"/>
+                                                    <asp:ListItem Value="Serbia" Text="Serbia"/>
+                                                    <asp:ListItem Value="Seychelles" Text="Seychelles"/>
+                                                    <asp:ListItem Value="Sierra Leone" Text="Sierra Leone"/>
+                                                    <asp:ListItem Value="Singapore" Text="Singapore"/>
+                                                    <asp:ListItem Value="Sint Maarten" Text="Sint Maarten"/>
+                                                    <asp:ListItem Value="Slovakia" Text="Slovakia"/>
+                                                    <asp:ListItem Value="Slovenia" Text="Slovenia"/>
+                                                    <asp:ListItem Value="Solomon Islands" Text="Solomon Islands"/>
+                                                    <asp:ListItem Value="Somalia" Text="Somalia"/>
+                                                    <asp:ListItem Value="South Africa" Text="South Africa"/>
+                                                    <asp:ListItem Value="South Korea" Text="South Korea"/>
+                                                    <asp:ListItem Value="South Sudan" Text="South Sudan"/>
+                                                    <asp:ListItem Value="Spain" Text="Spain"/>
+                                                    <asp:ListItem Value="Sri Lanka" Text="Sri Lanka"/>
+                                                    <asp:ListItem Value="St. Barthélemy" Text="St. Barthélemy"/>
+                                                    <asp:ListItem Value="St. Helena" Text="St. Helena"/>
+                                                    <asp:ListItem Value="St. Kitts & Nevis" Text="St. Kitts & Nevis"/>
+                                                    <asp:ListItem Value="St. Lucia" Text="St. Lucia"/>
+                                                    <asp:ListItem Value="St. Martin" Text="St. Martin"/>
+                                                    <asp:ListItem Value="St. Pierre & Miquelon" Text="St. Pierre & Miquelon"/>
+                                                    <asp:ListItem Value="St. Vincent & Grenadies" Text="St. Vincent & Grenadies"/>
+                                                    <asp:ListItem Value="Sudan" Text="Sudan"/>
+                                                    <asp:ListItem Value="Suriname" Text="Suriname"/>
+                                                    <asp:ListItem Value="Swaziland" Text="Swaziland"/>
+                                                    <asp:ListItem Value="Sweden" Text="Sweden"/>
+                                                    <asp:ListItem Value="Switzerland" Text="Switzerland"/>
+                                                    <asp:ListItem Value="Syria" Text="Syria"/>
+                                                    <asp:ListItem Value="Taiwan" Text="Taiwan"/>
+                                                    <asp:ListItem Value="Tajikistan" Text="Tajikistan"/>
+                                                    <asp:ListItem Value="Tanzania" Text="Tanzania"/>
+                                                    <asp:ListItem Value="Thailand" Text="Thailand"/>
+                                                    <asp:ListItem Value="Timor-Leste" Text="Timor-Leste"/>
+                                                    <asp:ListItem Value="Togo" Text="Togo"/>
+                                                    <asp:ListItem Value="Tokelau" Text="Tokelau"/>
+                                                    <asp:ListItem Value="Tonga" Text="Tonga"/>
+                                                    <asp:ListItem Value="Trinidad & Tobago" Text="Trinidad & Tobago"/>
+                                                    <asp:ListItem Value="Tunisia" Text="Tunisia"/>
+                                                    <asp:ListItem Value="Turkey" Text="Turkey"/>
+                                                    <asp:ListItem Value="Turkmenistan" Text="Turkmenistan"/>
+                                                    <asp:ListItem Value="Turks & Caicos Islands" Text="Turks & Caicos Islands"/>
+                                                    <asp:ListItem Value="Tuvalu" Text="Tuvalu"/>
+                                                    <asp:ListItem Value="U.S. Virgin Islands" Text="U.S. Virgin Islands"/>
+                                                    <asp:ListItem Value="Uganda" Text="Uganda"/>
+                                                    <asp:ListItem Value="Ukraine" Text="Ukraine"/>
+                                                    <asp:ListItem Value="United Arab Emirates" Text="United Arab Emirates"/>
+                                                    <asp:ListItem Value="United Kingdom" Text="United Kingdom"/>
+                                                    <asp:ListItem Value="United States" Text="United States"/>
+                                                    <asp:ListItem Value="Uruguay" Text="Uruguay"/>
+                                                    <asp:ListItem Value="Uzbekistan" Text="Uzbekistan"/>
+                                                    <asp:ListItem Value="Vanuatu" Text="Vanuatu"/>
+                                                    <asp:ListItem Value="Vatican City" Text="Vatican City"/>
+                                                    <asp:ListItem Value="Venezuela" Text="Venezuela"/>
+                                                    <asp:ListItem Value="Vietnam" Text="Vietnam"/>
+                                                    <asp:ListItem Value="Wallis & Futuna" Text="Wallis & Futuna"/>
+                                                    <asp:ListItem Value="Yemen" Text="Yemen"/>
+                                                    <asp:ListItem Value="Zambia" Text="Zambia"/>
+                                                    <asp:ListItem Value="Zimbabwe" Text="Zimbabwe"/>
 
                                        </asp:DropDownList>
-                                       <asp:RequiredFieldValidator ID="RFV_country" runat="server" ControlToValidate="DDL_country" ErrorMessage="Please select country"  Font-Bold="True" ForeColor="Red" InitialValue="0" ></asp:RequiredFieldValidator>
-                              
+                                    
                                </div>
                                
                                </div>
@@ -277,8 +274,7 @@
                                     <div class="form-group col-sm">
                                        <asp:Label ID="lbl_city" runat="server" Text="City"></asp:Label>
                                          <asp:TextBox ID="txt_city" class="form-control" placeholder="Enter City"  runat="server"></asp:TextBox>
-                                          <asp:RequiredFieldValidator ID="RFV_city" runat="server" ControlToValidate="txt_city" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                              
+                                    
                                     </div>
                                     <div class="form-group col-sm">
                                        <asp:Label ID="lbl_cell_phone" runat="server" Text="Cell Phone"></asp:Label>
@@ -289,42 +285,35 @@
                                             <asp:TextBox ID="txt_cell_phone" class="form-control inlineFormInputGroupUsername" placeholder="Enter Cell Phone" runat="server"></asp:TextBox>
                                               
                                         </div>
-                                        <asp:RequiredFieldValidator ID="RFV_cell_phone" runat="server" ControlToValidate="txt_cell_phone" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                                          <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txt_cell_phone" ErrorMessage="Error cell phone" Font-Bold="True" ForeColor="Red" ValidationExpression="^[0-9]{11}$"></asp:RegularExpressionValidator>
                                         </div>
                                     <div class="form-group col-sm">
                                         <asp:Label ID="lbl_zip_code" runat="server" Text="Zip Code"></asp:Label>
                                         <asp:TextBox ID="txt_zipcode" class="form-control" placeholder="Enter Zip Code" runat="server"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RFV_zipcode" runat="server" ControlToValidate="txt_zipcode" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                              
+                                    
                                     </div>
                                </div>
                                <div class="form-row">
                                    <div class="form-group col-sm">
                                         <asp:Label ID="lbl_address" runat="server" Text="Address"></asp:Label>
                                         <asp:TextBox ID="txt_address" class="form-control" placeholder="Enter Address" runat="server"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RFV_address" runat="server" ControlToValidate="txt_address" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                              
+                                    
                                    </div>
                                    <div class="form-group col-sm">
                                         <asp:Label ID="lbl_type_credit" runat="server" Text="Credit Card Type"></asp:Label>
                                         <asp:DropDownList ID="DDL_type" class="form-control"  runat="server" OnSelectedIndexChanged="SelectedIndex_Changed2" DataTextField="countryName" DataValueField="countryName">
                                            <asp:ListItem Value="0">Select</asp:ListItem>
-                                                    <asp:ListItem>Master Card</asp:ListItem>
-                                                    <asp:ListItem>American Express</asp:ListItem>
-                                                    <asp:ListItem>Visa</asp:ListItem>
-                                                    <asp:ListItem>Bitcoin Card</asp:ListItem>
-                                                    <asp:ListItem>Etherium Card</asp:ListItem>
+                                                    <asp:ListItem Value="Master Card" Text="Master Card"/>
+                                                    <asp:ListItem Value="American Express" Text="American Express"/>
+                                                    <asp:ListItem Value="Visa" Text="Visa"/>
+                                                    <asp:ListItem Value="Bitcoin Card" Text="Bitcoin Card"/>
+                                                    <asp:ListItem Value="Etherium Card" Text="Etherium Card"/>
                                          </asp:DropDownList>
                                          
-                                         <asp:RequiredFieldValidator ID="RFV_type" runat="server" ControlToValidate="DDL_type" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
-                              
+                                    
                                     </div>
                                     <div class="form-group col-sm">
                                         <asp:Label ID="lbl_credit_card" runat="server" Text="Credit Card Number"></asp:Label>
                                         <asp:TextBox ID="txt_credit_card" class="form-control" placeholder="0000-000-0000-000" runat="server"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RFV_credit_card" runat="server" ControlToValidate="txt_credit_card" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txt_credit_card" ErrorMessage="Error Credit Card" Font-Bold="True" ForeColor="Red" ValidationExpression="[\d]+((-|\s)?[\d]+)+$"></asp:RegularExpressionValidator>
                                     </div>
                                </div>
                                <div id="ContentPlaceHolder1_lbl_1">
@@ -337,18 +326,18 @@
                                     <asp:Label ID="Label3" runat="server" Text=" "></asp:Label>
                                         <asp:DropDownList ID="DDL_1" class="form-control" runat="server" OnSelectedIndexChanged="SelectedIndex_Changed" DataTextField="countryName"  DataValueField="countryName">
                                            <asp:ListItem Value="0">Select</asp:ListItem>
-                                                    <asp:ListItem>01</asp:ListItem>
-                                                    <asp:ListItem>02</asp:ListItem>
-                                                    <asp:ListItem>03</asp:ListItem>
-                                                    <asp:ListItem>04</asp:ListItem>
-                                                    <asp:ListItem>05</asp:ListItem>
-                                                    <asp:ListItem>06</asp:ListItem>
-                                                    <asp:ListItem>07</asp:ListItem>
-                                                    <asp:ListItem>08</asp:ListItem>
-                                                    <asp:ListItem>09</asp:ListItem>
-                                                    <asp:ListItem>10</asp:ListItem>
-                                                    <asp:ListItem>11</asp:ListItem>
-                                                    <asp:ListItem>12</asp:ListItem>
+                                                    <asp:ListItem Value="01" Text="01"/>
+                                                    <asp:ListItem Value="02"  Text="02"/>
+                                                    <asp:ListItem Value="03" Text="03"/>
+                                                    <asp:ListItem Value="04" Text="04"/>
+                                                    <asp:ListItem Value="05" Text="05"/>
+                                                    <asp:ListItem Value="06" Text="06"/>
+                                                    <asp:ListItem Value="07" Text="07"/>
+                                                    <asp:ListItem Value="08" Text="08"/>
+                                                    <asp:ListItem Value="09" Text="09"/>
+                                                    <asp:ListItem Value="10" Text="10"/> 
+                                                    <asp:ListItem Value="11" Text="11"/>
+                                                    <asp:ListItem Value="12" Text="12"/> 
                                                     
                                          </asp:DropDownList>
                                       
@@ -357,21 +346,21 @@
                                         <asp:Label ID="Label2" runat="server" Text=" "></asp:Label>
                                         <asp:DropDownList ID="DDL_2" class="form-control"  runat="server" InitialValue="0" OnSelectedIndexChanged="SelectedIndex_Changed1" DataTextField="countryName" DataValueField="countryName">
                                            <asp:ListItem Value="0">Select</asp:ListItem>
-                                                    <asp:ListItem>13</asp:ListItem>
-                                                    <asp:ListItem>14</asp:ListItem>
-                                                    <asp:ListItem>15</asp:ListItem>
-                                                    <asp:ListItem>16</asp:ListItem>
-                                                    <asp:ListItem>17</asp:ListItem>
-                                                    <asp:ListItem>18</asp:ListItem>
-                                                    <asp:ListItem>19</asp:ListItem>
-                                                    <asp:ListItem>20</asp:ListItem>
-                                                    <asp:ListItem>21</asp:ListItem>
-                                                    <asp:ListItem>22</asp:ListItem>
-                                                    <asp:ListItem>23</asp:ListItem>
-                                                    <asp:ListItem>24</asp:ListItem>
-                                                    <asp:ListItem>25</asp:ListItem>
-                                                    <asp:ListItem>26</asp:ListItem>
-                                                    <asp:ListItem>27</asp:ListItem>
+                                                    <asp:ListItem Value="13" Text="13"/>
+                                                    <asp:ListItem Value="14" Text="14"/>
+                                                    <asp:ListItem Value="15" Text="15"/>
+                                                    <asp:ListItem Value="16" Text="16"/>
+                                                    <asp:ListItem Value="17" Text="17"/>
+                                                    <asp:ListItem Value="18" Text="18"/>
+                                                    <asp:ListItem Value="19" Text="19"/>
+                                                    <asp:ListItem Value="20" Text="20"/>
+                                                    <asp:ListItem Value="21" Text="21"/>
+                                                    <asp:ListItem Value="22" Text="22"/> 
+                                                    <asp:ListItem Value="23" Text="23"/>
+                                                    <asp:ListItem Value="24" Text="24"/> 
+						                            <asp:ListItem Value="25" Text="25"/> 
+                                                    <asp:ListItem Value="26" Text="26"/>
+                                                    <asp:ListItem Value="27" Text="27"/> 
                                                     
                                          </asp:DropDownList>
                                        
@@ -380,13 +369,11 @@
                                         
                                         <asp:Label ID="lbl_code_security" runat="server" Text="Code Security"></asp:Label>
                                         <asp:TextBox ID="txt_code_security" class="form-control" placeholder="000" runat="server"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RFV_code_security" runat="server" ControlToValidate="txt_code_security" ErrorMessage="Please fill out this field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
-                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txt_code_security" ErrorMessage="Error Code Security" Font-Bold="True" ForeColor="Red" ValidationExpression="^[0-9]{3}$"></asp:RegularExpressionValidator>
                                      </div>
                                 </div>
                                
                                <div class="alinear">
-                                   <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Update" OnClick="Button1_Click" />
+                                   <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Return to Home" OnClick="Button1_Click" />
             
                                </div>
                        </div>

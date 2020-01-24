@@ -124,7 +124,7 @@ namespace web_example
 
         protected void LinkButton9_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Web_Pages/Admin/page_management_admin.aspx");
+            Response.Redirect("~/Web_Pages/User/page_singup_user_2.aspx");
 
         }
     }

@@ -34,7 +34,7 @@ namespace web_example.Web_Pages
                         
                     Session["email"] =txt_email.Text;
                     Session["role"] = "User";
-                    //Session["Idee"] = id;
+                    Session["Idee"] = id;
                     //En esta linea de codigo realiza la operación de enviar al Web Form pageMenucabanias 
                     //el ID y el nombre del usuario.
                     Response.Redirect("~/Web_Pages/page_home.aspx?");

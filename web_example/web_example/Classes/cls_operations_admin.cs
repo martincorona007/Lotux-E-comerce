@@ -13,8 +13,9 @@ namespace web_example.Classes
         string table = "Products";
         string msg1;
         protected string name, brand, description, photo;
-        protected int fk_id_admin, fk_id_cat,current_stock,id;
+        protected int fk_id_admin, fk_id_cat,current_stock,id,id1;
         protected float price;
+        protected string first_name, last_name, number_phone, country, city, address,zip_code;
         public cls_operations_admin(int i,int f,int fk,string n,string b,float p,string d,string po,int c)
         {
             this.id = i;
@@ -27,8 +28,20 @@ namespace web_example.Classes
             this.photo = po;
             this.current_stock = c;
         }
+        public cls_operations_admin(int i,string fn,string ln,string np,string con,string cit,string add,string zc)
+        {
+            this.id1 = i;
+            this.first_name = fn;
+            this.last_name = ln;
+            this.number_phone = np;
+            this.country = con;
+            this.city = cit;
+            this.address = add;
+            this.zip_code = zc;
+        }
         public cls_operations_admin() { }
         public int ID { set { id = value; } get { return id; } }
+        public int ID1 { set { id1 = value; } get { return id1; } }
 
         public int Fk_id_admin { set { fk_id_admin = value; } get { return fk_id_admin; } }
         public int Fk_id_cat { set { fk_id_cat = value; } get { return fk_id_cat; } }
@@ -39,6 +52,16 @@ namespace web_example.Classes
         public String Photo { set { photo = value; } get { return photo; } }
         public int Current_stock { set { current_stock = value; } get { return current_stock; } }
        
+        public String First_Name { set { first_name = value; } get { return first_name; } }
+        public String Last_Name { set { last_name = value; } get { return last_name; } }
+        public String Number_Phone { set { number_phone = value; } get { return number_phone; } }
+        public String Country { set { country = value; } get { return country; } }
+        public String City { set { city = value; } get { return city; } }
+        public String Address { set { address = value; } get { return address; } }
+        public String Zip_Code { set { zip_code = value; } get { return zip_code; } }
+
+
+
         public void Add()
         {
             //Se conecta a la tabla espefica con el metodo de conectar de la clase classConexion.
@@ -195,6 +218,72 @@ namespace web_example.Classes
                 
             }
         }
-   
+        public cls_operations_admin select_Profile(string fName)
+        {
+            cls_conection obj1 = new cls_conection();
+            cls_operations_admin matchingPerson = new cls_operations_admin(0,"","","","","","","");
+            
+                using (SqlConnection myConnection = new SqlConnection(obj1.getConnection()))
+                {
+                    string oString = "SELECT first_name,last_name,number_phone,country,city,address,zip_code FROM Data_Admin WHERE FK_ID_admin=@fName";
+                    SqlCommand oCmd = new SqlCommand(oString, myConnection);
+                    oCmd.Parameters.AddWithValue("@fname", fName);
+                    myConnection.Open();
+                    using (SqlDataReader oReader = oCmd.ExecuteReader())
+                    {
+                        while (oReader.Read())
+                        {
+                            //I got problem getting the PRIMARY KEY and the FOREIGN KEY 
+                            //matchingPerson.Fk_id_cat = Int32.Parse(oReader["ID_prod"].ToString());
+
+                            matchingPerson.First_Name = oReader["first_name"].ToString();
+                            matchingPerson.Last_Name = oReader["last_name"].ToString();
+                            matchingPerson.Number_Phone = oReader["number_phone"].ToString();
+                            matchingPerson.Country = oReader["country"].ToString();
+                            matchingPerson.City = oReader["city"].ToString();
+                            matchingPerson.Address = oReader["address"].ToString();
+                            matchingPerson.Zip_Code = oReader["zip_code"].ToString();
+
+                        }
+
+                        myConnection.Close();
+                    }
+                }            
+               return matchingPerson;
+
+        }
+        public bool update_Profile()
+        {
+            try
+            {
+                cls_conection obj1 = new cls_conection();
+                SqlConnection myConnection = new SqlConnection(obj1.getConnection());
+                myConnection.Open();
+                if (myConnection.State == ConnectionState.Closed)
+                {
+                    myConnection.Open();
+                }
+
+                SqlCommand oCmd = new SqlCommand("UPDATE Data_Admin SET first_name=@ffirst_name,last_name=@flast_name,number_phone=@fnumber_phone,country=@fcountry,city=@fcity,address=@faddress,zip_code=@fzip_code WHERE FK_ID_admin=@fkame", myConnection);
+                oCmd.Parameters.AddWithValue("@fkame", ID1);
+                oCmd.Parameters.AddWithValue("@ffirst_name",First_Name);
+                oCmd.Parameters.AddWithValue("@flast_name", Last_Name);
+                oCmd.Parameters.AddWithValue("@fnumber_phone", Number_Phone);
+                oCmd.Parameters.AddWithValue("@fcountry", Country);
+                oCmd.Parameters.AddWithValue("@fcity", City);
+                oCmd.Parameters.AddWithValue("@faddress",Address);
+                oCmd.Parameters.AddWithValue("@fzip_code", Zip_Code);
+                oCmd.ExecuteNonQuery();
+
+                myConnection.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                msg = ex.ToString();
+                return false;
+                //Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
+        }
     }
 }
